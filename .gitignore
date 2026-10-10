@@ -17,6 +17,7 @@ env/
 
 # Generated indexes and uploaded documents
 chroma_db/
+logs/
 data/*.pdf
 !data/.gitkeep
 

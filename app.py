@@ -24,11 +24,30 @@ def save_uploaded_pdfs(uploaded_files) -> list[Path]:
     return saved_paths
 
 
+def debug_metrics(metrics: dict) -> dict:
+    """Keep the chat debug view concise while the JSONL log retains full detail."""
+    return {
+        "timings_ms": metrics.get("timings_ms", {}),
+        "input_tokens": metrics.get("input_tokens", 0),
+        "output_tokens": metrics.get("output_tokens", 0),
+        "tokens_estimated": metrics.get("tokens_estimated", False),
+        "estimated_cost_usd": metrics.get("estimated_cost_usd", 0),
+        "gemini_calls": metrics.get("gemini_calls", {}),
+        "cache_hit": metrics.get("cache_hit", False),
+        "error": metrics.get("error"),
+    }
+
+
 st.set_page_config(page_title="Student Helper RAG", layout="wide")
 st.title("Student Helper RAG")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
+if "session_id" not in st.session_state:
+    # Kept for the lifetime of this browser session and included in JSONL logs.
+    import uuid
+
+    st.session_state.session_id = str(uuid.uuid4())
 
 with st.sidebar:
     st.header("Documents")
@@ -79,6 +98,9 @@ for message in st.session_state.messages:
             with st.expander("Sources"):
                 for source in message["sources"]:
                     st.caption(source)
+        if message.get("metrics"):
+            with st.expander("Debug metrics", expanded=False):
+                st.json(debug_metrics(message["metrics"]))
 
 query = st.chat_input("Ask a question")
 
@@ -90,7 +112,8 @@ if query:
 
     with st.chat_message("assistant"):
         with st.spinner("Searching documents..."):
-            answer, docs = answer_question(query)
+            result = answer_question(query, session_id=st.session_state.session_id)
+            answer, docs = result
 
         st.markdown(answer)
 
@@ -110,10 +133,14 @@ if query:
         else:
             unique_sources = []
 
+        with st.expander("Debug metrics", expanded=False):
+            st.json(debug_metrics(result.metrics))
+
     st.session_state.messages.append(
         {
             "role": "assistant",
             "content": answer,
             "sources": unique_sources,
+            "metrics": result.metrics,
         }
     )

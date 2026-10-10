@@ -1,0 +1,5970 @@
+{
+  "config_tag": "baseline",
+  "top_k": 4,
+  "use_rewrite": false,
+  "question_count": 180,
+  "hit_rate_at_k": 0.8944444444444445,
+  "mrr": 0.7837962962962963,
+  "results": [
+    {
+      "id": "q002",
+      "question": "In a directed acyclic graph, how can you determine the number of paths from node 1 to a node x, and why is a topological sort required for this calculation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        161,
+        162
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.37766140440953466
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 162,
+          "score": 0.3622180825103379
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 163,
+          "score": 0.32125007216794155
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 161,
+          "score": 0.2701588730772182
+        }
+      ]
+    },
+    {
+      "id": "q003",
+      "question": "When a modification history is available, why is it possible to perform queries on any previous version of a segment tree?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        272
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.3443245611057075
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.3278911153172703
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.21617331423769975
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 273,
+          "score": 0.20421126408758417
+        }
+      ]
+    },
+    {
+      "id": "q005",
+      "question": "Which of the listed books on competitive programming are intended for beginners?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        25,
+        26
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 26,
+          "score": 0.3736007513049659
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.18197060468034396
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 13,
+          "score": 0.1567121847924475
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 13,
+          "score": 0.07540449977378792
+        }
+      ]
+    },
+    {
+      "id": "q006",
+      "question": "When throwing two dice, what are the three possible outcomes that result in a sum (X) of 10?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        238
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.30998131508385746
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 236,
+          "score": 0.1875301117233813
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.16084715600358387
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.15157094682558167
+        }
+      ]
+    },
+    {
+      "id": "q007",
+      "question": "How are unsigned integers represented in programming, and what is the typical result of exceeding the maximum value?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        213
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 213,
+          "score": 0.2631943758464612
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 106,
+          "score": 0.152256151303399
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 44,
+          "score": 0.10442499603543043
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 197,
+          "score": 0.08713409619097867
+        }
+      ]
+    },
+    {
+      "id": "q008",
+      "question": "How many times does a depth-first search process each node in a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        127
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 127,
+          "score": 0.2503655995916053
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 127,
+          "score": 0.2269518602821437
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 131,
+          "score": 0.19454261632214978
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 168,
+          "score": 0.1683683047044348
+        }
+      ]
+    },
+    {
+      "id": "q009",
+      "question": "What is the primary purpose of using amortized analysis when evaluating an algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        87
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 87,
+          "score": 0.26952706595067005
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 4,
+          "score": 0.14840466101452793
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 4,
+          "score": 0.13288547484730312
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 89,
+          "score": 0.13006384350004407
+        }
+      ]
+    },
+    {
+      "id": "q010",
+      "question": "How do you calculate the sum of an arithmetic progression and a geometric progression based on the provided formulas?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        20,
+        21
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 21,
+          "score": 0.3386566349367612
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 20,
+          "score": 0.1569777226868892
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 20,
+          "score": 0.12632883560181152
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 21,
+          "score": 0.11325670533224147
+        }
+      ]
+    },
+    {
+      "id": "q011",
+      "question": "How can you calculate the value of sumq(a,b) when a > 1?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        97
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 97,
+          "score": 0.4914023736646318
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 97,
+          "score": 0.4027107963104929
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 94,
+          "score": 0.2891276347429187
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 94,
+          "score": 0.2746874712167567
+        }
+      ]
+    },
+    {
+      "id": "q012",
+      "question": "How many new nodes are added to a tree per operation to allow for the storage of its full modification history?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        273
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 273,
+          "score": 0.21784897729359848
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 271,
+          "score": 0.20399126935613981
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.18867194956868055
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.1773841904713936
+        }
+      ]
+    },
+    {
+      "id": "q013",
+      "question": "After Kruskal's algorithm connects all nodes in a graph, why does it stop adding edges?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        154
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 158,
+          "score": 0.18130278160758576
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 152,
+          "score": 0.16530087476660138
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 152,
+          "score": 0.16238205076968198
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 184,
+          "score": 0.1522865854258293
+        }
+      ]
+    },
+    {
+      "id": "q014",
+      "question": "What does the sign of the cross product of two vectors a and b indicate about their relative orientation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        277,
+        278
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 278,
+          "score": 0.32240647370598424
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 278,
+          "score": 0.3002656002924908
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 112,
+          "score": 0.12801823831473785
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 279,
+          "score": 0.06450347810438498
+        }
+      ]
+    },
+    {
+      "id": "q015",
+      "question": "Given the initial solution x = 8 and y = -20 for the equation 39x + 15y = 3, what is the general formula for generating all other possible solutions (x, y)?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        213,
+        214
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 214,
+          "score": 0.2069420718440124
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 57,
+          "score": 0.11520595451356319
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 214,
+          "score": 0.09911940626541339
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.0964488235415401
+        }
+      ]
+    },
+    {
+      "id": "q016",
+      "question": "What is the Roman numeral equivalent of the number 2?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        2
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 249,
+          "score": 0.21919515646968513
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.21093728469371714
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 108,
+          "score": 0.1897834930077355
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 208,
+          "score": 0.18698497820426804
+        }
+      ]
+    },
+    {
+      "id": "q017",
+      "question": "If you are placing k balls into n boxes where each box can contain at most one ball, what mathematical expression represents the number of ways to do this?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        219
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 220,
+          "score": 0.4033381510000799
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 219,
+          "score": 0.29799914602462735
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.11150308684575265
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.1105549016593494
+        }
+      ]
+    },
+    {
+      "id": "q018",
+      "question": "How does the size of a maximum flow compare to the size of a cut in a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        196
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 196,
+          "score": 0.40010196819853894
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 195,
+          "score": 0.34143130005780686
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 195,
+          "score": 0.2656102176899464
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 198,
+          "score": 0.2610541625026805
+        }
+      ]
+    },
+    {
+      "id": "q019",
+      "question": "What is the time complexity for calculating the nth Fibonacci number using matrix exponentiation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        231
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 230,
+          "score": 0.16693599943415727
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 231,
+          "score": 0.1654479916190094
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.1568530094619644
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 229,
+          "score": 0.14574321066878257
+        }
+      ]
+    },
+    {
+      "id": "q020",
+      "question": "What happens when you increment the integer variable x after it reaches its maximum value of 2^31 - 1?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        106
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 44,
+          "score": 0.13105303345148522
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.13093101179691932
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 197,
+          "score": 0.09715806501557041
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.0882473788743943
+        }
+      ]
+    },
+    {
+      "id": "q021",
+      "question": "Who is the Levenshtein distance named after?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        84
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 84,
+          "score": 0.3467795136920612
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 141,
+          "score": 0.16405451311699148
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 84,
+          "score": 0.1608299270013663
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 138,
+          "score": 0.14461350560369704
+        }
+      ]
+    },
+    {
+      "id": "q022",
+      "question": "How does C++ sort pairs if their first elements are equal?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        39,
+        40
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 40,
+          "score": 0.15451487866701905
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 55,
+          "score": 0.147432249712749
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 36,
+          "score": 0.11326296860663884
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 35,
+          "score": 0.10725745829131547
+        }
+      ]
+    },
+    {
+      "id": "q023",
+      "question": "What is the total time complexity for moving both endpoints in Mo's algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        266
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.25785688604341245
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.23760024511747643
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.21321899898444072
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.18590256764508067
+        }
+      ]
+    },
+    {
+      "id": "q024",
+      "question": "On which page does the chapter on Combinatorics begin?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        6
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 217,
+          "score": 0.1529185998186173
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 127,
+          "score": 0.11571214051554968
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 49,
+          "score": 0.11386333527824133
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 50,
+          "score": 0.09879187447595138
+        }
+      ]
+    },
+    {
+      "id": "q026",
+      "question": "When merging data structures d[s] and d[u] at node s, why is swapping them based on size beneficial for the algorithm's performance?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        181
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 180,
+          "score": 0.2415698669260385
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 181,
+          "score": 0.22474523933477536
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 45,
+          "score": 0.1879279205971844
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 54,
+          "score": 0.17855089402655538
+        }
+      ]
+    },
+    {
+      "id": "q027",
+      "question": "How can you rotate a vector by an angle 'a' using the polar function?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        277
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 277,
+          "score": 0.4756942625763805
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 277,
+          "score": 0.38741557342523375
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 46,
+          "score": 0.15062982717390766
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 45,
+          "score": 0.10012722453974773
+        }
+      ]
+    },
+    {
+      "id": "q028",
+      "question": "How can you modify dynamic programming code to handle problems where the number of solutions is very large?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        80
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.29650158461422127
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 80,
+          "score": 0.2174995055962064
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.13964216011592115
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 163,
+          "score": 0.1382258421798765
+        }
+      ]
+    },
+    {
+      "id": "q029",
+      "question": "What is the total time complexity of the counting sort algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        39
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 39,
+          "score": 0.2773163823243964
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.25833261070445046
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.18624554253063078
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 55,
+          "score": 0.1679463467527884
+        }
+      ]
+    },
+    {
+      "id": "q030",
+      "question": "How can you modify a segment tree to find the position of the smallest element in an array, and what is the time complexity of this operation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        101,
+        102
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.1863280131819457
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 102,
+          "score": 0.1744139895706564
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 98,
+          "score": 0.17133810538035008
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.16200623879071666
+        }
+      ]
+    },
+    {
+      "id": "q031",
+      "question": "When calculating the sum of elements in a range [a,b] using a tree, what condition must be met to add a node's s value to the total sum?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        269
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 269,
+          "score": 0.1847562542947436
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 273,
+          "score": 0.15895073243715402
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 261,
+          "score": 0.14870372389166964
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 158,
+          "score": 0.14596433441689682
+        }
+      ]
+    },
+    {
+      "id": "q033",
+      "question": "What happens to the search process if a path touches a wall and can turn either left or right?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        63
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 63,
+          "score": 0.3362229223647755
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 63,
+          "score": 0.16931173473057395
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 88,
+          "score": 0.1094113984150824
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 249,
+          "score": 0.10495372050007046
+        }
+      ]
+    },
+    {
+      "id": "q034",
+      "question": "What is the defining characteristic of a parenthesis expression that is not valid?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        221
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.5983565284190058
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.46026037803342956
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.28863440077488134
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 222,
+          "score": 0.20186679814577715
+        }
+      ]
+    },
+    {
+      "id": "q035",
+      "question": "What is the formula for the expected value of a random variable X in a uniform distribution, and what is the property that must always hold for the probability distribution vector [p1, p2, ..., pn] of a Markov chain?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        240,
+        241
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 241,
+          "score": 0.5047169765061008
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.38721463124185274
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.32550030030085964
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 241,
+          "score": 0.22476261810886716
+        }
+      ]
+    },
+    {
+      "id": "q036",
+      "question": "What is the prerequisite for Hierholzer’s algorithm to successfully find an Eulerian circuit in a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        185
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 185,
+          "score": 0.3959599973125941
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 184,
+          "score": 0.34645693184134324
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 185,
+          "score": 0.3410162755049006
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 185,
+          "score": 0.3107274153573079
+        }
+      ]
+    },
+    {
+      "id": "q037",
+      "question": "What is the time complexity of operations for a two-dimensional segment tree?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        274
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 274,
+          "score": 0.37967927854476147
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.2614832108764578
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 274,
+          "score": 0.2549912375448727
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.21550971313171918
+        }
+      ]
+    },
+    {
+      "id": "q038",
+      "question": "Does the greedy algorithm always produce the optimal solution for the euro coin system?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        67
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.41210066469879736
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.32047380656375124
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 67,
+          "score": 0.3203866835945819
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 67,
+          "score": 0.2611680328108234
+        }
+      ]
+    },
+    {
+      "id": "q039",
+      "question": "How many rounds of iteration does the Bellman–Ford algorithm perform over all edges in the graph, and what is its resulting time complexity?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        135
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.32154857909598544
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.2204373431031076
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 135,
+          "score": 0.216407698755253
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.2078257980362897
+        }
+      ]
+    },
+    {
+      "id": "q042",
+      "question": "What is the first step required to solve the 2SUM problem using the two pointers method?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        88
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 88,
+          "score": 0.31456203910985003
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 87,
+          "score": 0.24278662115252697
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 87,
+          "score": 0.2387923075067288
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 76,
+          "score": 0.1389777471626488
+        }
+      ]
+    },
+    {
+      "id": "q043",
+      "question": "What two conditions must be met for a problem to be solved using dynamic programming?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        75
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.3021329156963779
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.2433344550069474
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.2292448553062301
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 163,
+          "score": 0.2290621641174879
+        }
+      ]
+    },
+    {
+      "id": "q044",
+      "question": "Which algorithmic technique is used to solve the closest pair problem and the convex hull problem according to the table of contents?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        7
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 288,
+          "score": 0.3150447862497391
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 289,
+          "score": 0.22608664756890415
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 7,
+          "score": 0.20554656410618077
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 287,
+          "score": 0.11576942309675839
+        }
+      ]
+    },
+    {
+      "id": "q046",
+      "question": "What is the total time complexity of an algorithm composed of multiple consecutive phases?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        28
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.31704696150978373
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.24145104973421616
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.20457961050524487
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 27,
+          "score": 0.14672610661972882
+        }
+      ]
+    },
+    {
+      "id": "q047",
+      "question": "What is the return value of find(x) if the value x is not present in the set?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        50
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 115,
+          "score": 0.4040680015057138
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.27865481106962015
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 77,
+          "score": 0.22418667698672073
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.17899066259683435
+        }
+      ]
+    },
+    {
+      "id": "q049",
+      "question": "What is the formula used to calculate the result of the bitwise NOT operation ~x?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        107
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 107,
+          "score": 0.15934886690085193
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 106,
+          "score": 0.10523163471952764
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 230,
+          "score": 0.09061029537710799
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 110,
+          "score": 0.08116224161991772
+        }
+      ]
+    },
+    {
+      "id": "q050",
+      "question": "What is the primary constraint regarding edge weights when using Dijkstra's algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        136
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.3312051935855809
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 138,
+          "score": 0.29722114384881826
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 264,
+          "score": 0.23515031190480792
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 121,
+          "score": 0.21449292389780072
+        }
+      ]
+    },
+    {
+      "id": "q051",
+      "question": "When solving the knapsack problem where the sum of weights is n, what is the standard time complexity for calculating all possible subset sums, and how can this be improved using the observation about distinct weights?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        263,
+        264
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 264,
+          "score": 0.43518444015062696
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 82,
+          "score": 0.2653474298018629
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 264,
+          "score": 0.2322894484222078
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 83,
+          "score": 0.20579181471688418
+        }
+      ]
+    },
+    {
+      "id": "q052",
+      "question": "What is the time complexity of the Floyd–Warshall algorithm, and why?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        141
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 141,
+          "score": 0.3706823913577761
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 141,
+          "score": 0.3063826445923532
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 139,
+          "score": 0.26678651417495497
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 139,
+          "score": 0.2492297939473263
+        }
+      ]
+    },
+    {
+      "id": "q053",
+      "question": "What is the time complexity difference between the basic matrix multiplication verification method and the Monte Carlo algorithm, and how does the latter work?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        241,
+        242
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 241,
+          "score": 0.258308862064659
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 242,
+          "score": 0.17156487740749193
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 228,
+          "score": 0.16676351256285693
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 229,
+          "score": 0.1622527153335061
+        }
+      ]
+    },
+    {
+      "id": "q054",
+      "question": "After k rounds of the bubble sort algorithm, which elements are in their correct positions?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        36
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 36,
+          "score": 0.5773116177971249
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 36,
+          "score": 0.14276341096735623
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 39,
+          "score": 0.08297588631609605
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 135,
+          "score": 0.07721437420442137
+        }
+      ]
+    },
+    {
+      "id": "q055",
+      "question": "How can you determine if a point is inside or outside a polygon using the ray casting method?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        279,
+        280
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 280,
+          "score": 0.37463672833196
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 280,
+          "score": 0.3570440213092966
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 288,
+          "score": 0.12150508713737948
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 281,
+          "score": 0.10132120385479224
+        }
+      ]
+    },
+    {
+      "id": "q056",
+      "question": "What does Goldbach’s conjecture state regarding even integers greater than 2?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        209
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 209,
+          "score": 0.18489317146033832
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 246,
+          "score": 0.16434106883272184
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 246,
+          "score": 0.11741405066973679
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 160,
+          "score": 0.11506972638789653
+        }
+      ]
+    },
+    {
+      "id": "q057",
+      "question": "When using binary search to find the maximum value of a function that increases then decreases, what condition must be met to identify the peak position k?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        44
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 44,
+          "score": 0.22044545258157175
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 98,
+          "score": 0.15171934654869795
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 43,
+          "score": 0.14239276973537293
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.13149126442144482
+        }
+      ]
+    },
+    {
+      "id": "q058",
+      "question": "What is the property of linearity in relation to the expected value of a sum of random variables?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        239
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 239,
+          "score": 0.3833941909388019
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.1581658635985486
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.15523843594993836
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 240,
+          "score": 0.15336736986626853
+        }
+      ]
+    },
+    {
+      "id": "q059",
+      "question": "Why does the algorithm operate in O(n) time despite the potential need to remove multiple elements from the stack?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        90
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 90,
+          "score": 0.26208888603488667
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 90,
+          "score": 0.21813854503104274
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 89,
+          "score": 0.19208726771927562
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 89,
+          "score": 0.16742720025478539
+        }
+      ]
+    },
+    {
+      "id": "q060",
+      "question": "Which algorithm is capable of processing the largest inputs instantly?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        34
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 34,
+          "score": 0.3335291399030882
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.06524739009872119
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 263,
+          "score": 0.04711508964832775
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 257,
+          "score": 0.04377709783830273
+        }
+      ]
+    },
+    {
+      "id": "q061",
+      "question": "In the provided segment tree sum function, what condition determines when the function returns the value stored in the current node instead of recursing further?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        267
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.16545767280314902
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 271,
+          "score": 0.15526485102781468
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.14917584342762322
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 102,
+          "score": 0.14093330804959278
+        }
+      ]
+    },
+    {
+      "id": "q062",
+      "question": "What is the time complexity of processing a range query using a simple loop that iterates through the subarray?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        93
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 93,
+          "score": 0.17567029615563773
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 266,
+          "score": 0.16356280780947338
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.15346024874590175
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 266,
+          "score": 0.1388579559280802
+        }
+      ]
+    },
+    {
+      "id": "q063",
+      "question": "In the provided recursive subset generation method, what parameter value is used to initiate the search function?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        57
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 57,
+          "score": 0.298804011950068
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 58,
+          "score": 0.20426474511254894
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.15981030342081734
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 77,
+          "score": 0.1543007403935333
+        }
+      ]
+    },
+    {
+      "id": "q064",
+      "question": "Which algorithm is associated with strong connectivity in section 17.1?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        5
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 5,
+          "score": 0.19715498530682896
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 167,
+          "score": 0.1172661959543394
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 170,
+          "score": 0.10293719452223937
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 294,
+          "score": 0.10241608966970905
+        }
+      ]
+    },
+    {
+      "id": "q067",
+      "question": "What is the core concept behind lazy propagation in segment trees, and what is its effect on time complexity?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        267,
+        268
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 268,
+          "score": 0.2835071249547035
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 6,
+          "score": 0.216695202561419
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 267,
+          "score": 0.182262174447711
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 268,
+          "score": 0.18084935600002414
+        }
+      ]
+    },
+    {
+      "id": "q068",
+      "question": "What is the content of the provided excerpt?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        10
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.07931064494776505
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 282,
+          "score": 0.058134562011839745
+        }
+      ]
+    },
+    {
+      "id": "q069",
+      "question": "What is the most popular way to represent graphs in algorithms?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        123
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 123,
+          "score": 0.2720939123138406
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 119,
+          "score": 0.14742102634077944
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 108,
+          "score": 0.086122546305727
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.08190284343810025
+        }
+      ]
+    },
+    {
+      "id": "q070",
+      "question": "What is the primary function of the number 132 in the context of the provided text?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        142
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 142,
+          "score": 0.5736362623156215
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.13468505909173217
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.06110548100651562
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.058846915647648455
+        }
+      ]
+    },
+    {
+      "id": "q071",
+      "question": "In the provided tree, what is the value of maxLength(4)?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        147
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 146,
+          "score": 0.1713313257872012
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 147,
+          "score": 0.1648168546090099
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 147,
+          "score": 0.1612587681914849
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 101,
+          "score": 0.1314173295924163
+        }
+      ]
+    },
+    {
+      "id": "q072",
+      "question": "How can map structures be utilized to efficiently process subtree queries in a tree where each node has an assigned value?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        180
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 175,
+          "score": 0.34225694566044484
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 180,
+          "score": 0.2968410900547488
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 175,
+          "score": 0.19201696816878913
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 48,
+          "score": 0.1822592558088931
+        }
+      ]
+    },
+    {
+      "id": "q073",
+      "question": "Why is the subset processing order critical when calculating the sum of values for all subsets using dynamic programming?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        115
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 115,
+          "score": 0.19664070185417315
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.1779731067693575
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.15014192438684146
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 113,
+          "score": 0.1499053517828678
+        }
+      ]
+    },
+    {
+      "id": "q074",
+      "question": "In the Sieve of Eratosthenes algorithm, what does it signify if the value at sieve[k] is equal to 0?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        210
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 210,
+          "score": 0.46402467779429357
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 210,
+          "score": 0.3156702033618384
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.06715710568721685
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.058610783998441704
+        }
+      ]
+    },
+    {
+      "id": "q075",
+      "question": "What is the primary difference in utility between using an adjacency list and an adjacency matrix to represent a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        123,
+        124
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 123,
+          "score": 0.31076834279330695
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 232,
+          "score": 0.2905562104130287
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 124,
+          "score": 0.25024109175880965
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 124,
+          "score": 0.21362304386449396
+        }
+      ]
+    },
+    {
+      "id": "q076",
+      "question": "In his 1969 paper 'Gaussian elimination is not optimal,' what conclusion did V. Strassen reach regarding Gaussian elimination?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        294
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 294,
+          "score": 0.20150382968021663
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 229,
+          "score": 0.04224454513330838
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.03765399813749
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 131,
+          "score": 0.0294373451629611
+        }
+      ]
+    },
+    {
+      "id": "q077",
+      "question": "In the context of polynomial hashing, what is the primary advantage of comparing the hash values of two strings instead of their individual characters?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        255
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 255,
+          "score": 0.4231217305732604
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.31086610057081165
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.25657018468384685
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.23128036054674977
+        }
+      ]
+    },
+    {
+      "id": "q078",
+      "question": "How is the maximum number of people in an office determined using arrival and departure times?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        285
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 285,
+          "score": 0.18774896431185603
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 197,
+          "score": 0.11061949210994296
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 196,
+          "score": 0.10730114807105476
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 197,
+          "score": 0.10595764838656221
+        }
+      ]
+    },
+    {
+      "id": "q079",
+      "question": "What is the primary function of the page number '286' within the context of the provided source?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        296
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 296,
+          "score": 0.6163145213505478
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 196,
+          "score": 0.08403188472906725
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 196,
+          "score": 0.07489646349438256
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 191,
+          "score": 0.06832720161577438
+        }
+      ]
+    },
+    {
+      "id": "q080",
+      "question": "In the context of the event scheduling problem described, what is the objective when selecting events with given starting and ending times?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        68
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.35598567563111994
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 69,
+          "score": 0.1743517695893115
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 70,
+          "score": 0.1458475597886937
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 287,
+          "score": 0.10407521921191636
+        }
+      ]
+    },
+    {
+      "id": "q081",
+      "question": "How can you determine the minimum node-disjoint path cover of a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        201
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 201,
+          "score": 0.596065439301859
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 202,
+          "score": 0.5257297478121701
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 201,
+          "score": 0.4886061535728359
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 200,
+          "score": 0.2551758453363968
+        }
+      ]
+    },
+    {
+      "id": "q082",
+      "question": "In the game of Nim, what is the significance of the final state [0, 0, ..., 0]?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        247
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 250,
+          "score": 0.4448803626651966
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 247,
+          "score": 0.4152874113985192
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 248,
+          "score": 0.3902379453972151
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 250,
+          "score": 0.3566730450454159
+        }
+      ]
+    },
+    {
+      "id": "q083",
+      "question": "What is the time complexity for insertion and removal operations in a priority queue?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        53
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 53,
+          "score": 0.5122896476350659
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 139,
+          "score": 0.2916576727517457
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 53,
+          "score": 0.2170329329431056
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 138,
+          "score": 0.18963719499032414
+        }
+      ]
+    },
+    {
+      "id": "q086",
+      "question": "What information is represented by the elements in the vector<tuple<int,int,int>> edges list?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        126
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 267,
+          "score": 0.312275538708336
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 126,
+          "score": 0.2723541457807126
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 267,
+          "score": 0.23134381563661982
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 40,
+          "score": 0.19859342014650733
+        }
+      ]
+    },
+    {
+      "id": "q087",
+      "question": "What is the defining structural characteristic of a successor graph regarding the outdegree of its nodes?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        164
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 164,
+          "score": 0.47166599822062166
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 185,
+          "score": 0.24005662290296143
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 121,
+          "score": 0.17900778562547076
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.16430494489275144
+        }
+      ]
+    },
+    {
+      "id": "q088",
+      "question": "In a directed graph where all edges belong to the same connected component, what condition regarding node degrees must be met to ensure an Eulerian path exists if the indegree does not equal the outdegree in each node?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        184
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 184,
+          "score": 0.469228154174402
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 185,
+          "score": 0.3694879763487065
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 121,
+          "score": 0.29839538800085474
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 184,
+          "score": 0.27391053137351573
+        }
+      ]
+    },
+    {
+      "id": "q089",
+      "question": "How many ways are there to form the sum 5 using the coins {1, 3, 4}?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        79
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 79,
+          "score": 0.35264948992273437
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 76,
+          "score": 0.227395163417951
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.22688567776432186
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.22502110188848284
+        }
+      ]
+    },
+    {
+      "id": "q090",
+      "question": "Why does the algorithm reverse every edge before forming strongly connected components in the second phase?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        169
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 167,
+          "score": 0.3798053972691873
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 169,
+          "score": 0.3066637851322111
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 168,
+          "score": 0.2309139046538864
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 192,
+          "score": 0.1948312001644371
+        }
+      ]
+    },
+    {
+      "id": "q091",
+      "question": "Why is sorting often used as a subroutine in efficient algorithm design?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        35
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 35,
+          "score": 0.39623840852102904
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 35,
+          "score": 0.14181090693705198
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 26,
+          "score": 0.12794072055515973
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 55,
+          "score": 0.1154450242936042
+        }
+      ]
+    },
+    {
+      "id": "q092",
+      "question": "In the set of integers, what does the expression ∀x(∃y(y < x)) signify?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        23
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 23,
+          "score": 0.26101163795756965
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.22317170528282543
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 23,
+          "score": 0.2111501360953776
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 22,
+          "score": 0.13629058810369732
+        }
+      ]
+    },
+    {
+      "id": "q093",
+      "question": "What is the optimal value of x that minimizes the sum of squared differences for a set of numbers a1, a2, ..., an?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        72
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 71,
+          "score": 0.3513359603433746
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 72,
+          "score": 0.24350654670021069
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.14650530769234443
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 71,
+          "score": 0.1307149221434024
+        }
+      ]
+    },
+    {
+      "id": "q094",
+      "question": "How can the computational efficiency of counting paths in a grid be improved based on symmetry?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        62
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 162,
+          "score": 0.19827839465872993
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 232,
+          "score": 0.1336998857087116
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 62,
+          "score": 0.1273992785850888
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 4,
+          "score": 0.1196681006211481
+        }
+      ]
+    },
+    {
+      "id": "q095",
+      "question": "What are the three conditions for a valid tiling solution in an n × m grid, and why should the grid be rotated so that m is the shorter side?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        85,
+        86
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 85,
+          "score": 0.24250644505966135
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 284,
+          "score": 0.14013964712085383
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 85,
+          "score": 0.13679812181521955
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 81,
+          "score": 0.12204023669661988
+        }
+      ]
+    },
+    {
+      "id": "q096",
+      "question": "Why is the value '242' included in the text?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        252
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 252,
+          "score": 0.7688500593302018
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.110213357004384
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.10679624601735667
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 115,
+          "score": 0.10447291631074339
+        }
+      ]
+    },
+    {
+      "id": "q097",
+      "question": "How does the find function determine the representative of an element x?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        156
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 156,
+          "score": 0.36894745297526105
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 156,
+          "score": 0.3403943788201102
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 156,
+          "score": 0.2310592498585306
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 155,
+          "score": 0.15069703372942914
+        }
+      ]
+    },
+    {
+      "id": "q098",
+      "question": "According to Hall's theorem, what condition must be satisfied for a bipartite graph to contain a matching that includes all left nodes?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        199
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 199,
+          "score": 0.5624153039318185
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 199,
+          "score": 0.2885625635676335
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 198,
+          "score": 0.195106737726034
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 132,
+          "score": 0.1322063096856592
+        }
+      ]
+    },
+    {
+      "id": "q099",
+      "question": "Who authored the 1952 paper on constructing minimum-redundancy codes?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        293
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 293,
+          "score": 0.13596694865240955
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.062465276461211874
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 225,
+          "score": 0.05721849911165464
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 73,
+          "score": 0.05095120727868434
+        }
+      ]
+    },
+    {
+      "id": "q100",
+      "question": "In the Ford–Fulkerson algorithm, how are the flow and edge weights updated after a path is selected?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        192,
+        193
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 192,
+          "score": 0.2608861219091598
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 193,
+          "score": 0.2215067980328936
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 194,
+          "score": 0.18633126046666237
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 121,
+          "score": 0.1849689129165316
+        }
+      ]
+    },
+    {
+      "id": "q101",
+      "question": "Who authored the paper titled 'Efﬁcient range minimum queries using binary indexed trees'?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        292
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.22947039003293213
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 292,
+          "score": 0.1973630937363036
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 96,
+          "score": 0.19226325485912887
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.18573347989030273
+        }
+      ]
+    },
+    {
+      "id": "q102",
+      "question": "How do you determine whether to add or subtract the size of an intersection in the general inclusion-exclusion principle?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        223
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 223,
+          "score": 0.22202813418723702
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 223,
+          "score": 0.17580930042267184
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 224,
+          "score": 0.1737235253184125
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 222,
+          "score": 0.15249798296905662
+        }
+      ]
+    },
+    {
+      "id": "q103",
+      "question": "Why is the '*' character necessary in a trie, and what does it represent?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        253,
+        254
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 254,
+          "score": 0.3737571814973147
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 254,
+          "score": 0.17774820318792683
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 73,
+          "score": 0.12078388315933918
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 255,
+          "score": 0.09228599784283079
+        }
+      ]
+    },
+    {
+      "id": "q104",
+      "question": "What is the subject of Part I of the book?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        11
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.35332439846000063
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 30,
+          "score": 0.1369361875241785
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 119,
+          "score": 0.13177080267343444
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 26,
+          "score": 0.11415538835244371
+        }
+      ]
+    },
+    {
+      "id": "q106",
+      "question": "Which bitwise operation is used to represent the intersection of two sets, a and b?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        109
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 279,
+          "score": 0.186663994846514
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 223,
+          "score": 0.16928621019162787
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 107,
+          "score": 0.14190006193707075
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 155,
+          "score": 0.1405586245994633
+        }
+      ]
+    },
+    {
+      "id": "q107",
+      "question": "What is the page number of the provided excerpt?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        8
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.08368869399206594
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 249,
+          "score": 0.06996766740731855
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 282,
+          "score": 0.06759398916595695
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.06733173313204127
+        }
+      ]
+    },
+    {
+      "id": "q108",
+      "question": "Why is the time complexity of the first algorithm for finding the maximum subarray sum O(n^3)?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        32
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 32,
+          "score": 0.3262826125244306
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 87,
+          "score": 0.2857166682626165
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 33,
+          "score": 0.2568546156357105
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 31,
+          "score": 0.2372574611257653
+        }
+      ]
+    },
+    {
+      "id": "q109",
+      "question": "How is the Grundy number of a game state defined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        248
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 248,
+          "score": 0.5188084557663862
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 249,
+          "score": 0.4882625433759923
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 250,
+          "score": 0.4867313425188523
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 248,
+          "score": 0.4637306109192702
+        }
+      ]
+    },
+    {
+      "id": "q110",
+      "question": "What is the range of integers that can be stored in a signed n-bit variable, and how is the sign bit determined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        104,
+        105
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.28067549315595997
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.2799151978797195
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 107,
+          "score": 0.17627988513071055
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 107,
+          "score": 0.15002911780419856
+        }
+      ]
+    },
+    {
+      "id": "q111",
+      "question": "Which g++ compiler function should you use to determine if the number of set bits in an integer is even or odd?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        108
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 108,
+          "score": 0.1433323197908907
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 23,
+          "score": 0.12074724018612885
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.11354558232488152
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 47,
+          "score": 0.10817528460422887
+        }
+      ]
+    },
+    {
+      "id": "q112",
+      "question": "What is the time complexity for accessing elements in a C++ map versus an unordered_map?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        48
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 48,
+          "score": 0.4061745456596725
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.17994248678129438
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 30,
+          "score": 0.1199775461043971
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.11765782442691419
+        }
+      ]
+    },
+    {
+      "id": "q113",
+      "question": "How does the Edmonds–Karp algorithm differ from the scaling algorithm in terms of the search strategy used to find paths?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        195
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 195,
+          "score": 0.2645489716138247
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 162,
+          "score": 0.116797473383878
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 292,
+          "score": 0.08845598428572395
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.07781080927081468
+        }
+      ]
+    },
+    {
+      "id": "q114",
+      "question": "What condition must be met by every pair of non-adjacent nodes in a graph for it to contain a Hamiltonian path according to Ore’s theorem?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        187
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 187,
+          "score": 0.4914177840566658
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 187,
+          "score": 0.2721822820429649
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 188,
+          "score": 0.1941395551665153
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 132,
+          "score": 0.17189650634598386
+        }
+      ]
+    },
+    {
+      "id": "q115",
+      "question": "Given a number n with a prime factorization involving exponents αi, what are the formulas for the number of factors (τ(n)), the sum of factors (σ(n)), and the product of factors (μ(n))?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        207,
+        208
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 208,
+          "score": 0.4531248086622066
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 209,
+          "score": 0.2795414628765895
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 207,
+          "score": 0.2523352807923566
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 209,
+          "score": 0.2139836253010703
+        }
+      ]
+    },
+    {
+      "id": "q116",
+      "question": "Which part of the book covers advanced topics?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        205
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 205,
+          "score": 0.4967236632552976
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.13857439863090285
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 6,
+          "score": 0.11657306148667529
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 5,
+          "score": 0.09531794768074181
+        }
+      ]
+    },
+    {
+      "id": "q117",
+      "question": "How does the Bellman–Ford algorithm determine when the shortest distances from the starting node to all other nodes have been calculated?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        133,
+        134
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.38407872612587857
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.35659044479454094
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.32247764436150905
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 134,
+          "score": 0.2763795169128854
+        }
+      ]
+    },
+    {
+      "id": "q118",
+      "question": "What two properties must a subgraph possess to be considered a spanning tree of a given graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        151
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 151,
+          "score": 0.5099288365188747
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 154,
+          "score": 0.4074315100728277
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 154,
+          "score": 0.32978572960996916
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 152,
+          "score": 0.3220607944420156
+        }
+      ]
+    },
+    {
+      "id": "q119",
+      "question": "How many total outcomes are there when choosing 3 cards from a deck of 52?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        235
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 235,
+          "score": 0.4542287390858673
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 235,
+          "score": 0.1527682345276604
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 236,
+          "score": 0.13837933662874907
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.12756610929937054
+        }
+      ]
+    },
+    {
+      "id": "q120",
+      "question": "What is a key property of Dijkstra’s algorithm regarding the distance assigned to a node when it is selected?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        137
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 137,
+          "score": 0.3535090368685132
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.2431921693819293
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 138,
+          "score": 0.21523849577746249
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.1961682196667377
+        }
+      ]
+    },
+    {
+      "id": "q121",
+      "question": "What is the page number immediately preceding page 195, based on the provided text?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        204
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 205,
+          "score": 0.21529912565852194
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 258,
+          "score": 0.07427916262046354
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 6,
+          "score": 0.05625954773594524
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.04835670370607077
+        }
+      ]
+    },
+    {
+      "id": "q122",
+      "question": "In a segment tree representation where tree[k] is a node, what are the indices of its parent and its children?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        101
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 143,
+          "score": 0.35519581275597534
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 101,
+          "score": 0.34620069739682996
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 143,
+          "score": 0.33518796895848685
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.2970716815189547
+        }
+      ]
+    },
+    {
+      "id": "q123",
+      "question": "What is the primary drawback of using an adjacency matrix to represent a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        125
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 4,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 232,
+          "score": 0.28597141673356685
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 124,
+          "score": 0.23536576751706353
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 124,
+          "score": 0.21450785608111375
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 125,
+          "score": 0.19797519447740347
+        }
+      ]
+    },
+    {
+      "id": "q125",
+      "question": "How can the area of a quadrilateral with vertices (x1, y1), (x2, y2), (x3, y3), and (x4, y4) be calculated without using special cases?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        276
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 276,
+          "score": 0.3448955808933371
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 282,
+          "score": 0.20189111825038383
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 170,
+          "score": 0.19113327698329105
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 171,
+          "score": 0.18927203013245153
+        }
+      ]
+    },
+    {
+      "id": "q126",
+      "question": "Why is the edge 2–3 excluded from the tree?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        153
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 153,
+          "score": 0.43804808382509164
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 154,
+          "score": 0.3711574883399046
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 143,
+          "score": 0.35451403473697907
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 154,
+          "score": 0.3287880831763159
+        }
+      ]
+    },
+    {
+      "id": "q127",
+      "question": "What is the primary requirement for using Mo’s algorithm to process range queries?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        265
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 93,
+          "score": 0.3562116838953369
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.3468455078556717
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 93,
+          "score": 0.24820099315543306
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.2205343294358072
+        }
+      ]
+    },
+    {
+      "id": "q128",
+      "question": "Why is it impossible to form a topological sort for a directed graph that contains a cycle?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        159
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.45202926652102055
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.39478234959959724
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 161,
+          "score": 0.36870344733976085
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 160,
+          "score": 0.1955079123670056
+        }
+      ]
+    },
+    {
+      "id": "q129",
+      "question": "How does a deque differ from a vector in terms of its available operations?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        52
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 52,
+          "score": 0.28723843418292305
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 52,
+          "score": 0.1451023425972303
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 46,
+          "score": 0.13104343231224458
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 277,
+          "score": 0.08174583149707777
+        }
+      ]
+    },
+    {
+      "id": "q130",
+      "question": "How does memoization improve the efficiency of the recursive coin problem solution?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        77,
+        78
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 77,
+          "score": 0.1950942337348708
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.17054711029531422
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 68,
+          "score": 0.15833306101812233
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 4,
+          "score": 0.15094742310860923
+        }
+      ]
+    },
+    {
+      "id": "q131",
+      "question": "How is the total time complexity of a recursive function determined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        29
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.38328912837650525
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.17906270283173023
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 44,
+          "score": 0.14943546765003468
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.13306170676067045
+        }
+      ]
+    },
+    {
+      "id": "q132",
+      "question": "How can you determine if a connected graph component contains a cycle by comparing its node and edge counts?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        132
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 132,
+          "score": 0.24340364360245126
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 120,
+          "score": 0.2105323911046876
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.16201933905179713
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 165,
+          "score": 0.1592424868221377
+        }
+      ]
+    },
+    {
+      "id": "q133",
+      "question": "Can you access elements in a set using the [] notation, and what happens if you try to insert a duplicate value into a set?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        47
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 47,
+          "score": 0.31602978910099294
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 47,
+          "score": 0.2293286691438155
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 47,
+          "score": 0.19126692868239298
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 22,
+          "score": 0.19089420209365054
+        }
+      ]
+    },
+    {
+      "id": "q134",
+      "question": "How can you determine if a graph contains a cycle during a traversal?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        130,
+        131
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 4,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 132,
+          "score": 0.3041145186605587
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 135,
+          "score": 0.2905268732659378
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.28425221537200746
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 131,
+          "score": 0.2732813654819738
+        }
+      ]
+    },
+    {
+      "id": "q135",
+      "question": "If events A and B are disjoint, how is the probability of their union, P(A ∪ B), calculated?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        237
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 237,
+          "score": 0.38888689762476497
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 237,
+          "score": 0.2863907323668176
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 238,
+          "score": 0.12643946548565177
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 236,
+          "score": 0.12145461544675559
+        }
+      ]
+    },
+    {
+      "id": "q137",
+      "question": "How many labeled trees exist for a graph with n nodes?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        226
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 225,
+          "score": 0.25911605536491455
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 225,
+          "score": 0.22909491896903802
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 226,
+          "score": 0.11549266325417985
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 234,
+          "score": 0.11234376891617093
+        }
+      ]
+    },
+    {
+      "id": "q138",
+      "question": "Under what condition is the modular inverse of x modulo m defined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        212
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 212,
+          "score": 0.33104505536408807
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 213,
+          "score": 0.2332699298052166
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 16,
+          "score": 0.10466459311862404
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 212,
+          "score": 0.09114887852816343
+        }
+      ]
+    },
+    {
+      "id": "q139",
+      "question": "In Andrew’s algorithm, what condition is checked after adding a point to the upper hull to ensure the correct shape?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        289
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 289,
+          "score": 0.4362122597966708
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 288,
+          "score": 0.12382831058260543
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 288,
+          "score": 0.07822722277342138
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 199,
+          "score": 0.0606283651606013
+        }
+      ]
+    },
+    {
+      "id": "q141",
+      "question": "How is a topological sort of a graph constructed using the state-based search method?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        159,
+        160
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 160,
+          "score": 0.294249295175482
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 161,
+          "score": 0.292624096270067
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.2799537097782451
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 159,
+          "score": 0.19319027470291208
+        }
+      ]
+    },
+    {
+      "id": "q142",
+      "question": "When finding the nearest smaller element for the current element in an array, what condition must be met before adding the current element to the stack?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        89
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 89,
+          "score": 0.5916653147379404
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 90,
+          "score": 0.4077952441853021
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 89,
+          "score": 0.40548113757336396
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 90,
+          "score": 0.3005839470017423
+        }
+      ]
+    },
+    {
+      "id": "q143",
+      "question": "What is the numerical value associated with the beginning of the excerpt on page 190?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        190
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 5,
+          "score": 0.16052131061722558
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 200,
+          "score": 0.11677314921396573
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.11558623431433196
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 78,
+          "score": 0.11200253990595904
+        }
+      ]
+    },
+    {
+      "id": "q144",
+      "question": "What is the time complexity of finding the kth ancestor of a node by performing a sequence of k moves?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        173
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 173,
+          "score": 0.48593861691732976
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 177,
+          "score": 0.17913725658477048
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.1455942782811531
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 174,
+          "score": 0.1296537568864275
+        }
+      ]
+    },
+    {
+      "id": "q146",
+      "question": "Which page numbers contain the sections on sorting, binary search, and data structures?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        2,
+        3
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 3,
+          "score": 0.29576205865583555
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 45,
+          "score": 0.19292592089775207
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 54,
+          "score": 0.16913254084512236
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 35,
+          "score": 0.1687417891226394
+        }
+      ]
+    },
+    {
+      "id": "q147",
+      "question": "How do you calculate the Grundy number of a game that can be divided into independent subgames?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        250
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 250,
+          "score": 0.4450254156927851
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 250,
+          "score": 0.3760680685795984
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 249,
+          "score": 0.3566260821833683
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 248,
+          "score": 0.3233240173231799
+        }
+      ]
+    },
+    {
+      "id": "q148",
+      "question": "What is the total number of pages in the book?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        66
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.22115024304033212
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 112,
+          "score": 0.15573043407958226
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 113,
+          "score": 0.14811700903881897
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 164,
+          "score": 0.12271608922088478
+        }
+      ]
+    },
+    {
+      "id": "q149",
+      "question": "How can the Z-algorithm be used to find occurrences of a pattern p in a string s?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        260
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 253,
+          "score": 0.3475768601399882
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 260,
+          "score": 0.24304923966036143
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 141,
+          "score": 0.10671627758532322
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 73,
+          "score": 0.09032809173560993
+        }
+      ]
+    },
+    {
+      "id": "q150",
+      "question": "What is the formula for calculating the area of a polygon using Pick’s theorem?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        282
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 282,
+          "score": 0.3523861725185686
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 281,
+          "score": 0.3243063532600692
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 280,
+          "score": 0.15643312906494974
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 281,
+          "score": 0.14096669916564664
+        }
+      ]
+    },
+    {
+      "id": "q151",
+      "question": "According to Dilworth’s theorem, what is equal to the size of a maximum antichain in a directed acyclic graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        203
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 203,
+          "score": 0.5377083416616271
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 163,
+          "score": 0.17246400547223825
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 198,
+          "score": 0.16847547253957262
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 200,
+          "score": 0.14449616495480316
+        }
+      ]
+    },
+    {
+      "id": "q152",
+      "question": "How many nodes are changed in a segment tree during an update operation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        100
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 4,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.2575966901193622
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.2506231379969268
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 273,
+          "score": 0.21557492438706913
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 100,
+          "score": 0.18153965024611926
+        }
+      ]
+    },
+    {
+      "id": "q153",
+      "question": "Why is the assumption that there is a finite number of primes considered a contradiction?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        208
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 208,
+          "score": 0.5782317228354714
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 208,
+          "score": 0.260804239448903
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 209,
+          "score": 0.11965590643237539
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 207,
+          "score": 0.09645984313278605
+        }
+      ]
+    },
+    {
+      "id": "q154",
+      "question": "What are the two primary operations supported by a union-find structure, and what is their time complexity?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        155
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 155,
+          "score": 0.24472077916024781
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 55,
+          "score": 0.20012912701955432
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.18313020522431658
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 55,
+          "score": 0.1306644615010422
+        }
+      ]
+    },
+    {
+      "id": "q155",
+      "question": "How can you optimize the calculation of Hamming distances when the string length k is less than or equal to 32?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        110
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 110,
+          "score": 0.3369838145949306
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 110,
+          "score": 0.3223305409885608
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 253,
+          "score": 0.15850715526344675
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 253,
+          "score": 0.1413552782700328
+        }
+      ]
+    },
+    {
+      "id": "q156",
+      "question": "In the alternative binary search implementation, how does the jump length change during the process and what is the final state after the jumps are completed?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        41,
+        42
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 42,
+          "score": 0.3931049999581051
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 42,
+          "score": 0.30007048116797147
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 44,
+          "score": 0.1545920860664875
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 246,
+          "score": 0.14733633085064204
+        }
+      ]
+    },
+    {
+      "id": "q157",
+      "question": "What is the time complexity of searching for an element in an arbitrary array?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        41
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.20641436464683505
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 41,
+          "score": 0.16742717209381353
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 41,
+          "score": 0.16283507900306657
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.13496681917221898
+        }
+      ]
+    },
+    {
+      "id": "q158",
+      "question": "Why is O(n) often considered the best possible time complexity for an algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        30
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 33,
+          "score": 0.3078726782884673
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.2280688397533566
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 32,
+          "score": 0.21345545999319152
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.21313179413517275
+        }
+      ]
+    },
+    {
+      "id": "q159",
+      "question": "In which journal was S. Warshall's article 'A theorem on boolean matrices' published?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        295
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 295,
+          "score": 0.1989211343333782
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 227,
+          "score": 0.08970383863980462
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 242,
+          "score": 0.08137149206567156
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 139,
+          "score": 0.07615593372504786
+        }
+      ]
+    },
+    {
+      "id": "q160",
+      "question": "How are IOI contestants evaluated even when they are part of a team?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        25
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 25,
+          "score": 0.2626662257539864
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 25,
+          "score": 0.1909451616296124
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 25,
+          "score": 0.11000168990248899
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.03407511082745983
+        }
+      ]
+    },
+    {
+      "id": "q161",
+      "question": "In what order does breadth-first search visit the nodes of a graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        129
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 127,
+          "score": 0.3086138323749843
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 129,
+          "score": 0.30248905772628926
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 131,
+          "score": 0.26428675290637255
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 130,
+          "score": 0.17932439150880253
+        }
+      ]
+    },
+    {
+      "id": "q162",
+      "question": "When using the Bellman–Ford algorithm, what condition must be met regarding cycles in the graph, and what can the algorithm do if this condition is not met?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        132,
+        133
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.2859058302121982
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 133,
+          "score": 0.2018643589108022
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 136,
+          "score": 0.19738667236755875
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 135,
+          "score": 0.17082782001868296
+        }
+      ]
+    },
+    {
+      "id": "q163",
+      "question": "Which data structures can be used to perform range updates and point queries in O(logn) time for tree values?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        175,
+        176
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 268,
+          "score": 0.28320654102381776
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 102,
+          "score": 0.1894120409576495
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 273,
+          "score": 0.18480399995181762
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 93,
+          "score": 0.18338429828824657
+        }
+      ]
+    },
+    {
+      "id": "q164",
+      "question": "How can the bipartite maximum matching problem be solved using the maximum flow problem?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        197,
+        198
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 198,
+          "score": 0.35565715173177703
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 197,
+          "score": 0.33902503456703104
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 201,
+          "score": 0.24144844653596498
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 200,
+          "score": 0.21037815364605936
+        }
+      ]
+    },
+    {
+      "id": "q165",
+      "question": "In a graph with m edges, what is the expected number of edges whose endpoints have different colors when nodes are colored randomly?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        243
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 243,
+          "score": 0.42963070974782835
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 243,
+          "score": 0.18482668083811707
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 239,
+          "score": 0.1600314131099705
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 122,
+          "score": 0.1376923616000922
+        }
+      ]
+    },
+    {
+      "id": "q166",
+      "question": "In a directed, weighted graph, what constraint must be satisfied at each intermediate node during a maximum flow calculation?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        191
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 191,
+          "score": 0.21857144613593285
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 140,
+          "score": 0.20125041916787711
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 121,
+          "score": 0.17067338286509687
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 120,
+          "score": 0.1190488337011428
+        }
+      ]
+    },
+    {
+      "id": "q167",
+      "question": "In what order are the nodes of the component graph processed when assigning values to variables?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        171
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 171,
+          "score": 0.35249320192225764
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 171,
+          "score": 0.240795715509961
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 168,
+          "score": 0.15912973325440183
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 169,
+          "score": 0.14698588880655783
+        }
+      ]
+    },
+    {
+      "id": "q168",
+      "question": "How does dividing a grid into blocks of N consecutive columns optimize the algorithm's performance?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        111
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 111,
+          "score": 0.2701307531681471
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 111,
+          "score": 0.2519240304830427
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 262,
+          "score": 0.09484181335980685
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 62,
+          "score": 0.07119338061051944
+        }
+      ]
+    },
+    {
+      "id": "q169",
+      "question": "What is the first step of Kruskal's algorithm?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        152
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 158,
+          "score": 0.3263110803464264
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 152,
+          "score": 0.22246996934898594
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 5,
+          "score": 0.12814341720424016
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 155,
+          "score": 0.11986028500293325
+        }
+      ]
+    },
+    {
+      "id": "q170",
+      "question": "What is the claim made by Lagrange’s theorem regarding positive integers?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        215
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 215,
+          "score": 0.3839659652187411
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 215,
+          "score": 0.16718185377932504
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 199,
+          "score": 0.09210697167453316
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 212,
+          "score": 0.08880020238643181
+        }
+      ]
+    },
+    {
+      "id": "q171",
+      "question": "How does the use of hashing improve the time complexity of comparing string substrings?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        256
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.2584788127222105
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.21488418068510534
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 260,
+          "score": 0.2134299665358147
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 255,
+          "score": 0.20683814415116636
+        }
+      ]
+    },
+    {
+      "id": "q172",
+      "question": "When using dynamic programming to find the diameter of a tree, how are the values toLeaf(x) and maxLength(x) calculated for each node x?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        145,
+        146
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 146,
+          "score": 0.3989218913169412
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 146,
+          "score": 0.28238484140641346
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 147,
+          "score": 0.26113290962735297
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 145,
+          "score": 0.23556970596654192
+        }
+      ]
+    },
+    {
+      "id": "q173",
+      "question": "How can the subset sum problem be solved by dividing a list of numbers into two smaller lists A and B?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        65
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 65,
+          "score": 0.15856890366409143
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 64,
+          "score": 0.11828895443592626
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 58,
+          "score": 0.11643421016800332
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 87,
+          "score": 0.11276480887971457
+        }
+      ]
+    },
+    {
+      "id": "q174",
+      "question": "How does Merge sort calculate the middle element of a subarray array[a...b]?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        37
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 37,
+          "score": 0.4450901495009643
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 37,
+          "score": 0.1983124586689602
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 42,
+          "score": 0.184349007488468
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 37,
+          "score": 0.1524375666147134
+        }
+      ]
+    },
+    {
+      "id": "q175",
+      "question": "Why is the greedy strategy of always selecting the shortest event not always correct?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        69
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 70,
+          "score": 0.21370006257372964
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 67,
+          "score": 0.19327746426777553
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 69,
+          "score": 0.17672399498566702
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 235,
+          "score": 0.14213211527637032
+        }
+      ]
+    },
+    {
+      "id": "q176",
+      "question": "What is the lower bound for the time complexity of comparison-based sorting algorithms?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        38
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 38,
+          "score": 0.3696566620784627
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 35,
+          "score": 0.19978090162154877
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.16033414483680794
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 38,
+          "score": 0.15149782383300014
+        }
+      ]
+    },
+    {
+      "id": "q177",
+      "question": "Why is it inadvisable to use $B = 2^{32}$ or $B = 2^{64}$ when calculating string hashes?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        256,
+        257
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 257,
+          "score": 0.18535717607234387
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 253,
+          "score": 0.1370415751603888
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 255,
+          "score": 0.10849275094091722
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 73,
+          "score": 0.10750417504009267
+        }
+      ]
+    },
+    {
+      "id": "q178",
+      "question": "What is the definition of a strongly connected graph?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        167
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 167,
+          "score": 0.5688672071533647
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 120,
+          "score": 0.2586330026072472
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 169,
+          "score": 0.23489781636466572
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 171,
+          "score": 0.22702012868303328
+        }
+      ]
+    },
+    {
+      "id": "q179",
+      "question": "When do two line segments intersect at a point that is not one of their vertices?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        279
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 279,
+          "score": 0.3817313431404728
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 279,
+          "score": 0.3312041400214326
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 286,
+          "score": 0.3066632978156981
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 286,
+          "score": 0.2695119291081703
+        }
+      ]
+    },
+    {
+      "id": "q180",
+      "question": "What is the time complexity of breadth-first search?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        130
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 3,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 129,
+          "score": 0.26334977872262316
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.24570604555057923
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 130,
+          "score": 0.1968318406160673
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.16065821521716706
+        }
+      ]
+    },
+    {
+      "id": "q181",
+      "question": "For the formula L1 = (x2 ∨¬x1)∧(¬x1 ∨¬x2)∧(x1 ∨x3)∧(¬x2 ∨¬x3)∧(x1 ∨x4), what is the value of x3 when the formula is true?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        170
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 170,
+          "score": 0.70353231359668
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 171,
+          "score": 0.6683126214976789
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 170,
+          "score": 0.5466655818342294
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 224,
+          "score": 0.524285429577061
+        }
+      ]
+    },
+    {
+      "id": "q182",
+      "question": "What is the total length of a De Bruijn sequence for a fixed alphabet of k characters and substrings of length n?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        188
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 188,
+          "score": 0.37814834143398474
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 253,
+          "score": 0.19505790820254337
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 188,
+          "score": 0.19102945252824594
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 80,
+          "score": 0.17340940094410456
+        }
+      ]
+    },
+    {
+      "id": "q184",
+      "question": "Why is an absolute value taken when calculating the area of a polygon using the trapezoid summation formula?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        281
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 281,
+          "score": 0.3148497092614604
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 281,
+          "score": 0.24741504525328284
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 282,
+          "score": 0.17814757803235132
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 280,
+          "score": 0.14902764423958784
+        }
+      ]
+    },
+    {
+      "id": "q185",
+      "question": "If the longest path starting from node p goes through node x, how is the maximum length of a path starting from p determined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        147,
+        148
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 148,
+          "score": 0.3769644775341725
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 147,
+          "score": 0.3065406241152869
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 147,
+          "score": 0.21853960393621158
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 146,
+          "score": 0.18028801230894875
+        }
+      ]
+    },
+    {
+      "id": "q186",
+      "question": "How does the performance of Algorithm 3 compare to Algorithm 1 regarding their data structures?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        56
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 45,
+          "score": 0.25707038926797476
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 180,
+          "score": 0.2351764538864139
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 54,
+          "score": 0.22536612970726966
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 181,
+          "score": 0.20213124684239703
+        }
+      ]
+    },
+    {
+      "id": "q187",
+      "question": "What are the three types of events processed by a sweep line algorithm when checking for line segment intersections?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        286
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 286,
+          "score": 0.3345466903755149
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 285,
+          "score": 0.19873866188529726
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 279,
+          "score": 0.1783091270516246
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 286,
+          "score": 0.1700291613066838
+        }
+      ]
+    },
+    {
+      "id": "q188",
+      "question": "What is the content of page 234 in the source material?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        244
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 244,
+          "score": 0.5938047819197146
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 196,
+          "score": 0.07460214098111391
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 191,
+          "score": 0.0734087728236103
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 192,
+          "score": 0.07221804773588553
+        }
+      ]
+    },
+    {
+      "id": "q189",
+      "question": "How can you perform a range update on an array to increase all values in the range [a, b] by x using a binary indexed tree?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        104
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 96,
+          "score": 0.3718640553436923
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 104,
+          "score": 0.35882924887005674
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 176,
+          "score": 0.2859712060797032
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 97,
+          "score": 0.2797806706434959
+        }
+      ]
+    },
+    {
+      "id": "q190",
+      "question": "What is the time complexity of the dynamic programming algorithm used to calculate the path sums in an N x N grid?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        82
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.2155519433585352
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 75,
+          "score": 0.20324753775203178
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 144,
+          "score": 0.19515902503687635
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 29,
+          "score": 0.16945813873402826
+        }
+      ]
+    },
+    {
+      "id": "q191",
+      "question": "What prior knowledge is required to begin this book on competitive programming?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        9
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 9,
+          "score": 0.3123229267552269
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 13,
+          "score": 0.22121112751431254
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 26,
+          "score": 0.1852017648581599
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 119,
+          "score": 0.11334316224465325
+        }
+      ]
+    },
+    {
+      "id": "q192",
+      "question": "How is the probability P(A) of an event A calculated based on individual outcome probabilities?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        236
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 235,
+          "score": 0.4410613319541242
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 236,
+          "score": 0.33881436356897493
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 237,
+          "score": 0.2973751944590603
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 237,
+          "score": 0.2889888398266464
+        }
+      ]
+    },
+    {
+      "id": "q193",
+      "question": "How is the expression 'x mod m' defined?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        16
+      ],
+      "rewritten_query": null,
+      "hit": false,
+      "rank": null,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 211,
+          "score": 0.4169084312695371
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 17,
+          "score": 0.34093906364434284
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 213,
+          "score": 0.33007785542915213
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 221,
+          "score": 0.3171688848525053
+        }
+      ]
+    },
+    {
+      "id": "q194",
+      "question": "Based on the provided example, what is the edit distance between LOVE and MOVIE, and how is it determined when the last characters of two strings are equal?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        85
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 84,
+          "score": 0.37300910139471405
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 85,
+          "score": 0.37054867298239164
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 84,
+          "score": 0.14683213508951773
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 256,
+          "score": 0.09078996464256806
+        }
+      ]
+    },
+    {
+      "id": "q196",
+      "question": "In the standard bit representation of a subset, which element of the set does the last bit correspond to?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        58
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 105,
+          "score": 0.31590488786258264
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 58,
+          "score": 0.2798485682843708
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 108,
+          "score": 0.2478307365255843
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 50,
+          "score": 0.1882231483165489
+        }
+      ]
+    },
+    {
+      "id": "q197",
+      "question": "When is a lazy update propagated to the children of a node in a segment tree?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        270
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 270,
+          "score": 0.46524866071836524
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 268,
+          "score": 0.30466925685233337
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 99,
+          "score": 0.17925699262331457
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 272,
+          "score": 0.1586664951533128
+        }
+      ]
+    },
+    {
+      "id": "q199",
+      "question": "To whom is the algorithm described in the provided code snippet attributed?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        166
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 2,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 33,
+          "score": 0.10637261703753413
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 166,
+          "score": 0.10045045191338528
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.09340626242704773
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 28,
+          "score": 0.08137042810689366
+        }
+      ]
+    },
+    {
+      "id": "q200",
+      "question": "When minimizing the sum |a1 − x| + |a2 − x| + ... + |an − x|, what value should be chosen for x?",
+      "source_file": "cp_book.pdf",
+      "source_pages": [
+        71
+      ],
+      "rewritten_query": null,
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "source_file": "cp_book.pdf",
+          "page": 71,
+          "score": 0.3915318023606886
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 72,
+          "score": 0.2842524362010476
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 265,
+          "score": 0.20376508063100823
+        },
+        {
+          "source_file": "cp_book.pdf",
+          "page": 71,
+          "score": 0.17188963426408024
+        }
+      ]
+    }
+  ]
+}

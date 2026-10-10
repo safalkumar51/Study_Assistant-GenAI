@@ -1,0 +1,2832 @@
+[
+  {
+    "id": "q001",
+    "question": "How does the time complexity of the sliding window minimum algorithm using a deque compare to the time complexity of a naive approach that scans the entire window for each position?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      91
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q002",
+    "question": "In a directed acyclic graph, how can you determine the number of paths from node 1 to a node x, and why is a topological sort required for this calculation?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The number of paths is calculated using the recursion paths(x) = paths(a1) + paths(a2) + ... + paths(ak), where a1, a2, ..., ak are nodes with an edge to x. A topological sort is required to ensure the values are calculated in an order that allows each path count to be determined using previously computed values.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      161,
+      162
+    ],
+    "supporting_text": "Since the graph is acyclic, the values of paths(x) can be calculated in the order of a topological sort. ... paths(x) = paths(a1)+paths(a2)+···+paths(ak) where a1,a2,...,ak are the nodes from which there is an edge to x.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q003",
+    "question": "When a modification history is available, why is it possible to perform queries on any previous version of a segment tree?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It is possible because the full structure of each tree is stored during the modification history.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      272
+    ],
+    "supporting_text": "When the modiﬁcation history is available, we can perform queries in any previous tree like in an ordinary segment tree, because the full structure of each tree is stored.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q004",
+    "question": "How does the time complexity of computing a convex hull compare to the O(n log n) complexity mentioned for the nearest point search algorithm?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      288
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q005",
+    "question": "Which of the listed books on competitive programming are intended for beginners?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "Programming Challenges: The Programming Contest Training Manual by S. S. Skiena and M. A. Revilla, and Competitive Programming 3: The New Lower Bound of Programming Contests by S. Halim and F. Halim.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      25,
+      26
+    ],
+    "supporting_text": "S. S. Skiena and M. A. Revilla: Programming Challenges: The Programming Contest Training Manual [59]\n• S. Halim and F. Halim: Competitive Programming 3: The New Lower Bound of Programming Contests [33]\n... The ﬁrst two books are intended for beginners",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q006",
+    "question": "When throwing two dice, what are the three possible outcomes that result in a sum (X) of 10?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The three possible outcomes are [4,6], [5,5], and [6,4].",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      238
+    ],
+    "supporting_text": "For example, when throwing two dice, P(X = 10) = 3/36, because the total number of outcomes is 36 and there are three possible ways to obtain the sum 10: [4,6], [5,5] and [6,4].",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q007",
+    "question": "How are unsigned integers represented in programming, and what is the typical result of exceeding the maximum value?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Unsigned integers are represented modulo 2^k, where k is the number of bits in the data type. Consequently, if a number becomes too large, it wraps around.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      213
+    ],
+    "supporting_text": "In programming, unsigned integers are represented modulo 2^k, where k is the number of bits of the data type. A usual consequence of this is that a number wraps around if it becomes too large.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q008",
+    "question": "How many times does a depth-first search process each node in a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It processes each node only once.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      127
+    ],
+    "supporting_text": "processes each node only once.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q009",
+    "question": "What is the primary purpose of using amortized analysis when evaluating an algorithm?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It is used to estimate the total time used for all operations during the execution of an algorithm, especially when the time complexity of individual operations varies.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      87
+    ],
+    "supporting_text": "Amortized analysis can be used to analyze algorithms that contain operations whose time complexity varies. The idea is to estimate the total time used to all such operations during the execution of the algorithm, instead of focusing on individual operations.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q010",
+    "question": "How do you calculate the sum of an arithmetic progression and a geometric progression based on the provided formulas?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The sum of an arithmetic progression is calculated as n(a+b)/2, where a is the first number, b is the last number, and n is the count of numbers. The sum of a geometric progression is calculated as (bk - a) / (k - 1), where a is the first number, b is the last number, and k is the constant ratio.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      20,
+      21
+    ],
+    "supporting_text": "The sum of an arithmetic progression can be calculated using the formula n(a+ b)/2... A geometric progression is a sequence of numbers where the ratio between any two consecutive numbers is constant... The sum of a geometric progression can be calculated using the formula (bk − a)/(k − 1)",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q011",
+    "question": "How can you calculate the value of sumq(a,b) when a > 1?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "You can use the formula sumq(a,b) = sumq(1,b) - sumq(1,a-1).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      97
+    ],
+    "supporting_text": "To calculate the value of sumq(a,b) where a > 1, we can use the same trick that we used with preﬁx sum arrays: sumq(a,b) = sumq(1,b)−sumq(1,a−1).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q012",
+    "question": "How many new nodes are added to a tree per operation to allow for the storage of its full modification history?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Each operation adds O(logn) new nodes to the tree.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      273
+    ],
+    "supporting_text": "Since each operation adds only O(logn) new nodes to the tree, it is possible to store the full modiﬁcation history of the tree.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q013",
+    "question": "After Kruskal's algorithm connects all nodes in a graph, why does it stop adding edges?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The algorithm stops because the graph is connected and there is already a path between any two nodes.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      154
+    ],
+    "supporting_text": "After this, the algorithm will not add any new edges, because the graph is connected and there is a path between any two nodes.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q014",
+    "question": "What does the sign of the cross product of two vectors a and b indicate about their relative orientation?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A positive value indicates a left turn, zero indicates no turn, and a negative value indicates a right turn when vector b is placed after vector a.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      277,
+      278
+    ],
+    "supporting_text": "The cross product tells us whether b turns left (positive value), does not turn (zero) or turns right (negative value) when it is placed directly after a.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q015",
+    "question": "Given the initial solution x = 8 and y = -20 for the equation 39x + 15y = 3, what is the general formula for generating all other possible solutions (x, y)?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "All other solutions are given by the pairs (x + kb/gcd(a,b), y - ka/gcd(a,b)) for any integer k, where a=39 and b=15.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      213,
+      214
+    ],
+    "supporting_text": "If a pair (x, y) is a solution, then also all pairs (x+ kb/gcd(a,b), y− ka/gcd(a,b)) are solutions, where k is any integer.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q016",
+    "question": "What is the Roman numeral equivalent of the number 2?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "ii",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      2
+    ],
+    "supporting_text": "ii",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q017",
+    "question": "If you are placing k balls into n boxes where each box can contain at most one ball, what mathematical expression represents the number of ways to do this?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The number of ways is given by the binomial coefficient (n choose k).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      219
+    ],
+    "supporting_text": "Scenario 1: Each box can contain at most one ball. For example, when n = 5 and k = 2, there are 10 solutions: In this scenario, the answer is directly the binomial coefﬁcient (n choose k).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q018",
+    "question": "How does the size of a maximum flow compare to the size of a cut in a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The size of a maximum flow is smaller than or equal to the size of any cut in the graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      196
+    ],
+    "supporting_text": "Thus, the size of a maximum ﬂow is smaller than or equal to the size of any cut in the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q019",
+    "question": "What is the time complexity for calculating the nth Fibonacci number using matrix exponentiation?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "O(log n) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      231
+    ],
+    "supporting_text": "The value of X n can be calculated in O(logn) time, so the value of f (n) can also be calculated in O(logn) time.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q020",
+    "question": "What happens when you increment the integer variable x after it reaches its maximum value of 2^31 - 1?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The value becomes -2^31.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      106
+    ],
+    "supporting_text": "Initially, the value of x is 231 −1. This is the largest value that can be stored in an int variable, so the next number after 231 −1 is −231.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q021",
+    "question": "Who is the Levenshtein distance named after?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "V. I. Levenshtein.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      84
+    ],
+    "supporting_text": "The distance is named after V. I. Levenshtein who studied it in connection with binary codes [49].",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q022",
+    "question": "How does C++ sort pairs if their first elements are equal?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "If the first elements are equal, the pairs are sorted according to their second elements.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      39,
+      40
+    ],
+    "supporting_text": "Pairs (pair) are sorted primarily according to their ﬁrst elements (first). However, if the ﬁrst elements of two pairs are equal, they are sorted according to their second elements (second):",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q023",
+    "question": "What is the total time complexity for moving both endpoints in Mo's algorithm?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The total time complexity for moving both endpoints is O(n*sqrt(n)).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      266
+    ],
+    "supporting_text": "Thus, both endpoints move a total of O(npn) steps during the algorithm.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q024",
+    "question": "On which page does the chapter on Combinatorics begin?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Combinatorics begins on page 207.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      6
+    ],
+    "supporting_text": "22 Combinatorics 207",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q025",
+    "question": "How does the time complexity of reconstructing a binary tree from its pre-order and in-order traversals compare to the time complexity of performing a standard level-order traversal on that same tree?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      149
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q026",
+    "question": "When merging data structures d[s] and d[u] at node s, why is swapping them based on size beneficial for the algorithm's performance?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Swapping ensures that the contents are only copied O(log n) times during the tree traversal, which makes the algorithm efficient.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      181
+    ],
+    "supporting_text": "We always copy the contents from d[u] to d[s]. However, before this, we swap the contents of d[s] and d[u] if d[s] is smaller than d[u]. By doing this, each value is copied only O(logn) times during the tree traversal, which ensures that the algorithm is efﬁcient.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q027",
+    "question": "How can you rotate a vector by an angle 'a' using the polar function?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "You multiply the vector by a vector with a length of 1 and an angle of 'a', created using the polar(1.0, a) function.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      277
+    ],
+    "supporting_text": "The function polar(s,a) constructs a vector whose length is s and that points to an angle a. A vector can be rotated by an angle a by multiplying it by a vector with length 1 and angle a.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q028",
+    "question": "How can you modify dynamic programming code to handle problems where the number of solutions is very large?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "By performing all calculations modulo m (e.g., m = 10^9 + 7) by adding the line count[x] %= m; after the addition step.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      80
+    ],
+    "supporting_text": "Often the number of solutions is so large that it is not required to calculate the exact number but it is enough to give the answer modulo m where, for example, m = 109 +7. This can be done by changing the code so that all calculations are done modulo m. In the above code, it sufﬁces to add the line count[x] %= m; after the line count[x] += count[x-c];",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q029",
+    "question": "What is the total time complexity of the counting sort algorithm?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The total time complexity of counting sort is O(n).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      39
+    ],
+    "supporting_text": "Thus, the total time complexity of counting sort is O(n).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q030",
+    "question": "How can you modify a segment tree to find the position of the smallest element in an array, and what is the time complexity of this operation?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "By configuring the tree to support minimum queries instead of sums, you can locate the position of the smallest value by traversing a path downwards from the top node in O(logn) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      101,
+      102
+    ],
+    "supporting_text": "The structure of a segment tree also allows us to use binary search for locating array elements. For example, if the tree supports minimum queries, we can ﬁnd the position of an element with the smallest value in O(logn) time.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q031",
+    "question": "When calculating the sum of elements in a range [a,b] using a tree, what condition must be met to add a node's s value to the total sum?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The range [x, y] associated with the node must completely belong to the range [a,b].",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      269
+    ],
+    "supporting_text": "We also calculate the sum of elements in a range [a,b] by walking in the tree from top to bottom. If the range [x, y] of a node completely belongs to [a,b], we add the s value of the node to the sum.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q032",
+    "question": "How can Euler's totient theorem be utilized to simplify the calculation of modular exponentiation for cases where the exponent is very large?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      211
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q033",
+    "question": "What happens to the search process if a path touches a wall and can turn either left or right?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The search can be terminated because the grid splits into two parts containing unvisited squares, making it impossible to visit all squares.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      63
+    ],
+    "supporting_text": "If the path touches a wall and can turn either left or right, the grid splits into two parts that contain unvisited squares... In this case, we cannot visit all squares anymore, so we can terminate the search.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q034",
+    "question": "What is the defining characteristic of a parenthesis expression that is not valid?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "An invalid parenthesis expression contains a prefix where the number of right parentheses exceeds the number of left parentheses.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      221
+    ],
+    "supporting_text": "If a parenthesis expression is not valid, it has to contain a preﬁx where the number of right parentheses exceeds the number of left parentheses.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q035",
+    "question": "What is the formula for the expected value of a random variable X in a uniform distribution, and what is the property that must always hold for the probability distribution vector [p1, p2, ..., pn] of a Markov chain?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The expected value for a uniform distribution is E[X] = (a + b) / 2. For a Markov chain's probability distribution vector, the formula p1 + p2 + ... + pn = 1 always holds.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      240,
+      241
+    ],
+    "supporting_text": "The formula p1 + p2 +···+ pn = 1 always holds. The expected value of X in a uniform distribution is E[X] = a+ b / 2.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q036",
+    "question": "What is the prerequisite for Hierholzer’s algorithm to successfully find an Eulerian circuit in a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The graph must contain an Eulerian circuit; otherwise, the algorithm cannot find one.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      185
+    ],
+    "supporting_text": "Of course, we assume that the graph contains an Eulerian circuit; otherwise Hierholzer’s algorithm cannot ﬁnd it.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q037",
+    "question": "What is the time complexity of operations for a two-dimensional segment tree?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The operations take O(log^2 n) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      274
+    ],
+    "supporting_text": "The operations of a two-dimensional segment tree take O(log2 n) time, because the big tree and each small tree consist of O(logn) levels.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q038",
+    "question": "Does the greedy algorithm always produce the optimal solution for the euro coin system?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Yes, for the euro coin system, the greedy algorithm always produces a solution with the fewest possible number of coins.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      67
+    ],
+    "supporting_text": "It turns out that if the coins are the euro coins, the greedy algorithm always works, i.e., it always produces a solution with the fewest possible number of coins.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q039",
+    "question": "How many rounds of iteration does the Bellman–Ford algorithm perform over all edges in the graph, and what is its resulting time complexity?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The algorithm performs n−1 rounds, resulting in a time complexity of O(nm).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      135
+    ],
+    "supporting_text": "The algorithm consists of n−1 rounds, and on each round the algorithm goes through all edges of the graph and tries to reduce the distances... The time complexity of the algorithm is O(nm), because the algorithm consists of n−1 rounds and iterates through all m edges during a round.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q040",
+    "question": "How do the time complexity characteristics of Dijkstra’s algorithm compare to those of the Bellman-Ford algorithm when operating on a graph with negative edge weights?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      117
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q041",
+    "question": "What is the computational time complexity of the Z-algorithm for constructing a Z-array of a string of length n?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      259
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q042",
+    "question": "What is the first step required to solve the 2SUM problem using the two pointers method?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The array values must first be sorted in increasing order.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      88
+    ],
+    "supporting_text": "To solve the problem, we ﬁrst sort the array values in increasing order.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q043",
+    "question": "What two conditions must be met for a problem to be solved using dynamic programming?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The problem must be able to be divided into overlapping subproblems that can be solved independently.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      75
+    ],
+    "supporting_text": "Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q044",
+    "question": "Which algorithmic technique is used to solve the closest pair problem and the convex hull problem according to the table of contents?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Sweep line algorithms.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      7
+    ],
+    "supporting_text": "30 Sweep line algorithms 275\n30.1 Intersection points 276\n30.2 Closest pair problem 277\n30.3 Convex hull problem 278",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q045",
+    "question": "How would the classification of states change if the game rules were modified to allow players to move to either the next state or the state two positions ahead?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      246
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q046",
+    "question": "What is the total time complexity of an algorithm composed of multiple consecutive phases?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The total time complexity is the largest time complexity among the individual phases.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      28
+    ],
+    "supporting_text": "If the algorithm consists of consecutive phases, the total time complexity is the largest time complexity of a single phase.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q047",
+    "question": "What is the return value of find(x) if the value x is not present in the set?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The function returns an iterator equal to end.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      50
+    ],
+    "supporting_text": "The function find(x) returns an iterator that points to an element whose value is x. However, if the set does not contain x, the iterator will be end.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q048",
+    "question": "How does the choice of algorithm used to find the augmenting paths, such as Edmonds-Karp versus a simple DFS-based approach, affect the worst-case time complexity of the Ford-Fulkerson method?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      194
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q049",
+    "question": "What is the formula used to calculate the result of the bitwise NOT operation ~x?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "~x = -x - 1",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      107
+    ],
+    "supporting_text": "The formula ~x = −x−1 holds, for example, ~29 = −30.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q050",
+    "question": "What is the primary constraint regarding edge weights when using Dijkstra's algorithm?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Dijkstra's algorithm requires that there are no negative weight edges in the graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      136
+    ],
+    "supporting_text": "However, the algorithm requires that there are no negative weight edges in the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q051",
+    "question": "When solving the knapsack problem where the sum of weights is n, what is the standard time complexity for calculating all possible subset sums, and how can this be improved using the observation about distinct weights?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The standard approach takes O(n^2) time using dynamic programming. This can be improved by observing that there are at most O(√n) distinct weights, allowing for more efficient processing.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      263,
+      264
+    ],
+    "supporting_text": "Since the sum of the weights is n, there are at most n weights and all values of the function can be calculated in O(n^2) time using dynamic programming. However, we can make the algorithm more efﬁcient by using the fact that there are at most O(pn) distinct weights.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q052",
+    "question": "What is the time complexity of the Floyd–Warshall algorithm, and why?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The time complexity is O(n^3) because the algorithm utilizes three nested loops that iterate through the nodes of the graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      141
+    ],
+    "supporting_text": "The time complexity of the algorithm is O(n3), because it contains three nested loops that go through the nodes of the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q053",
+    "question": "What is the time complexity difference between the basic matrix multiplication verification method and the Monte Carlo algorithm, and how does the latter work?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The basic method takes O(n³) time, while the Monte Carlo algorithm takes O(n²) time. The Monte Carlo method works by choosing a random n-element vector X and comparing the results of ABX and CX.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      241,
+      242
+    ],
+    "supporting_text": "Of course, we can solve the problem by calculating the product AB again (in O(n3) time using the basic algorithm)... It turns out that we can solve the problem using a Monte Carlo algorithm whose time complexity is only O(n2). The idea is simple: we choose a random vector X of n elements, and calculate the matrices ABX and CX.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q054",
+    "question": "After k rounds of the bubble sort algorithm, which elements are in their correct positions?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "After k rounds, the k largest elements will be in their correct positions.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      36
+    ],
+    "supporting_text": "in general, after k rounds, the k largest elements will be in the correct positions.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q055",
+    "question": "How can you determine if a point is inside or outside a polygon using the ray casting method?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "You cast a ray in an arbitrary direction; if the ray touches the polygon boundary an odd number of times, the point is inside, and if it touches an even number of times, the point is outside.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      279,
+      280
+    ],
+    "supporting_text": "arbitrary direction and calculate the number of times it touches the boundary of the polygon. If the number is odd, the point is inside the polygon, and if the number is even, the point is outside the polygon.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q056",
+    "question": "What does Goldbach’s conjecture state regarding even integers greater than 2?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It states that each even integer n > 2 can be represented as the sum of two prime numbers (a + b = n).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      209
+    ],
+    "supporting_text": "Goldbach’s conjecture: Each even integer n > 2 can be represented as a sum n = a+ b so that both a and b are primes.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q057",
+    "question": "When using binary search to find the maximum value of a function that increases then decreases, what condition must be met to identify the peak position k?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The peak position k is found by identifying the largest value x such that f(x) < f(x+1), which implies that k = x+1.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      44
+    ],
+    "supporting_text": "The idea is to use binary search for ﬁnding the largest value of x for which f (x) < f (x+1). This implies that k = x+1 because f (x+1) > f (x+2).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q058",
+    "question": "What is the property of linearity in relation to the expected value of a sum of random variables?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The linearity property states that the expected value of a sum of random variables E[X1 + X2 + ··· + Xn] is always equal to the sum of their individual expected values, E[X1] + E[X2] + ··· + E[Xn], regardless of whether the variables are dependent.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      239
+    ],
+    "supporting_text": "A useful property of expected values is linearity. It means that the sum E[X1 + X2 + ··· + Xn] always equals the sum E[X1] + E[X2] + ··· + E[Xn]. This formula holds even if random variables depend on each other.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q059",
+    "question": "Why does the algorithm operate in O(n) time despite the potential need to remove multiple elements from the stack?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Each element is added to the stack exactly once and removed at most once, resulting in O(1) stack operations per element.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      90
+    ],
+    "supporting_text": "Still, each element is added exactly once to the stack and removed at most once from the stack. Thus, each element causes O(1) stack operations, and the algorithm works in O(n) time.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q060",
+    "question": "Which algorithm is capable of processing the largest inputs instantly?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Algorithm 3.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      34
+    ],
+    "supporting_text": "Only Algorithm 3 is able to process even the largest inputs instantly.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q061",
+    "question": "In the provided segment tree sum function, what condition determines when the function returns the value stored in the current node instead of recursing further?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The function returns the value of the current node (tree[k]) when the node's range [x, y] is entirely contained within the query range [a, b] (i.e., a <= x and y <= b).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      267
+    ],
+    "supporting_text": "if (a <= x && y <= b) return tree[k];",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q062",
+    "question": "What is the time complexity of processing a range query using a simple loop that iterates through the subarray?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It takes O(n) time, where n is the size of the array.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      93
+    ],
+    "supporting_text": "A simple way to process range queries is to use a loop that goes through all array values in the range. ... This function works in O(n) time, where n is the size of the array.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q063",
+    "question": "In the provided recursive subset generation method, what parameter value is used to initiate the search function?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The search begins when the function is called with the parameter 0.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      57
+    ],
+    "supporting_text": "The search begins when the function is called with parameter 0.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q064",
+    "question": "Which algorithm is associated with strong connectivity in section 17.1?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Kosaraju’s algorithm.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      5
+    ],
+    "supporting_text": "17 Strong connectivity 157\n17.1 Kosaraju’s algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q065",
+    "question": "How does Kirchhoff’s Matrix Tree Theorem generalize to multigraphs where there may be multiple edges between the same two nodes?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      234
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q066",
+    "question": "How does the process of matrix addition change when the matrices involved have different dimensions?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      227
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q067",
+    "question": "What is the core concept behind lazy propagation in segment trees, and what is its effect on time complexity?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The core concept is to perform updates and queries from top to bottom, applying updates lazily so they are only propagated to children when necessary. This allows both range updates and range queries to be performed in O(logn) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      267,
+      268
+    ],
+    "supporting_text": "Using lazy propagation, we can build a segment tree that supports both range updates and range queries in O(logn) time. The idea is to perform updates and queries from top to bottom and perform updates lazily so that they are propagated down the tree only when it is necessary.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q068",
+    "question": "What is the content of the provided excerpt?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The excerpt contains only the letter 'x'.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      10
+    ],
+    "supporting_text": "x",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q069",
+    "question": "What is the most popular way to represent graphs in algorithms?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Adjacency lists are the most popular way to represent graphs.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      123
+    ],
+    "supporting_text": "Adjacency lists are the most popular way to represent graphs, and most algorithms can be efﬁciently implemented using them.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q070",
+    "question": "What is the primary function of the number 132 in the context of the provided text?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The text does not provide enough information to define the function of the number 132, as it appears only as an isolated integer.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      142
+    ],
+    "supporting_text": "132",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q071",
+    "question": "In the provided tree, what is the value of maxLength(4)?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "3",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      147
+    ],
+    "supporting_text": "For example, in the above tree, maxLength(4) = 3, because there is a path 4 →1 →2 →6.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q072",
+    "question": "How can map structures be utilized to efficiently process subtree queries in a tree where each node has an assigned value?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Map structures can be used by creating a data structure for a node 's' based on the data structures of its children, allowing all queries related to the subtree of 's' to be processed using that combined information.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      180
+    ],
+    "supporting_text": "data structure d[s] that is based on the data structures of the children of s. Then, using this data structure, all queries related to s are processed... In this problem, we can use map structures to answer the queries.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q073",
+    "question": "Why is the subset processing order critical when calculating the sum of values for all subsets using dynamic programming?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Processing subsets S1 before S2 whenever S1 ⊂ S2 ensures that the dynamic programming values are calculated in the correct order.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      115
+    ],
+    "supporting_text": "Note that the above loop guarantees that for any two subsets S1 and S2 such that S1 ⊂S2, we process S1 before S2. Thus, the dynamic programming values are calculated in the correct order.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q074",
+    "question": "In the Sieve of Eratosthenes algorithm, what does it signify if the value at sieve[k] is equal to 0?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It signifies that the number k is prime.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      210
+    ],
+    "supporting_text": "The value sieve[k] = 0 means that k is prime, and the value sieve[k]≠ 0 means that k is not a prime and one of its prime factors is sieve[k].",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q075",
+    "question": "What is the primary difference in utility between using an adjacency list and an adjacency matrix to represent a graph?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "An adjacency list allows for efficiently finding all nodes reachable from a given node, while an adjacency matrix allows for efficiently checking if an edge exists between two specific nodes.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      123,
+      124
+    ],
+    "supporting_text": "The beneﬁt of using adjacency lists is that we can efﬁciently ﬁnd the nodes to which we can move from a given node through an edge. We can efﬁciently check from an adjacency matrix if there is an edge between two nodes.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q076",
+    "question": "In his 1969 paper 'Gaussian elimination is not optimal,' what conclusion did V. Strassen reach regarding Gaussian elimination?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "V. Strassen concluded that Gaussian elimination is not optimal.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      294
+    ],
+    "supporting_text": "[63] V. Strassen. Gaussian elimination is not optimal. Numerische Mathematik, 13(4):354–356, 1969.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q077",
+    "question": "In the context of polynomial hashing, what is the primary advantage of comparing the hash values of two strings instead of their individual characters?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Comparing hash values allows for an efficient way to check whether two strings are equal, because if the strings are the same, their hash values will also be the same.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      255
+    ],
+    "supporting_text": "String hashing is a technique that allows us to efﬁciently check whether two strings are equal. The idea in string hashing is to compare hash values of strings instead of their individual characters. ... If two strings are the same, their hash values are also the same, which makes it possible to compare strings based on their hash values.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q078",
+    "question": "How is the maximum number of people in an office determined using arrival and departure times?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "You maintain a counter that increases by one when a person arrives and decreases by one when a person leaves; the maximum value of this counter during the process is the answer.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      285
+    ],
+    "supporting_text": "We go through the events from left to right and maintain a counter. Always when a person arrives, we increase the value of the counter by one, and when a person leaves, we decrease the value of the counter by one. The answer to the problem is the maximum value of the counter during the algorithm.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q079",
+    "question": "What is the primary function of the page number '286' within the context of the provided source?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It serves as a numerical identifier for the page location.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      296
+    ],
+    "supporting_text": "286",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q080",
+    "question": "In the context of the event scheduling problem described, what is the objective when selecting events with given starting and ending times?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The objective is to find a schedule that includes the maximum possible number of events.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      68
+    ],
+    "supporting_text": "A classic problem is as follows: Given n events with their starting and ending times, ﬁnd a schedule that includes as many events as possible.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q081",
+    "question": "How can you determine the minimum node-disjoint path cover of a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "By constructing a matching graph where each node of the original graph is represented by a left and right node, and finding the maximum matching in that graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      201
+    ],
+    "supporting_text": "We can ﬁnd a minimum node-disjoint path cover by constructing a matching graph where each node of the original graph is represented by two nodes: a left node and a right node. ... A maximum matching in the resulting graph corresponds to a minimum node-disjoint path cover in the original graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q082",
+    "question": "In the game of Nim, what is the significance of the final state [0, 0, ..., 0]?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The state [0, 0, ..., 0] is a losing state because no sticks can be removed from it, making it the final state of the game.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      247
+    ],
+    "supporting_text": "The state [0,0,...,0] is a losing state, because it is not possible to remove any sticks, and this is always the ﬁnal state.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q083",
+    "question": "What is the time complexity for insertion and removal operations in a priority queue?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Insertion and removal operations in a priority queue take O(logn) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      53
+    ],
+    "supporting_text": "Insertion and removal take O(logn) time, and retrieval takes O(1) time.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q084",
+    "question": "How does the time complexity of Prim’s algorithm compare to Kruskal’s algorithm when using the Disjoint Set Union (DSU) structure described in the text?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      157
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q085",
+    "question": "How does the time complexity of computing the determinant of an n x n matrix compare to the time complexity of matrix multiplication as described in the chapter?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      229
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q086",
+    "question": "What information is represented by the elements in the vector<tuple<int,int,int>> edges list?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Each element represents an edge from node a to node b with weight w, formatted as (a,b,w).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      126
+    ],
+    "supporting_text": "Each element in this list is of the form (a,b,w), which means that there is an edge from node a to node b with weight w.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q087",
+    "question": "What is the defining structural characteristic of a successor graph regarding the outdegree of its nodes?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "In a successor graph, the outdegree of each node is exactly 1, meaning there is exactly one edge starting at each node.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      164
+    ],
+    "supporting_text": "For the rest of the chapter, we will focus on successor graphs. In those graphs, the outdegree of each node is 1, i.e., exactly one edge starts at each node.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q088",
+    "question": "In a directed graph where all edges belong to the same connected component, what condition regarding node degrees must be met to ensure an Eulerian path exists if the indegree does not equal the outdegree in each node?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The provided excerpt does not specify the additional condition for a directed graph to contain an Eulerian path when indegrees do not equal outdegrees; it only lists the condition that indegrees must equal outdegrees or provides an incomplete bullet point.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      184
+    ],
+    "supporting_text": "A directed graph contains an Eulerian path exactly when all the edges belong to the same connected component and • in each node, the indegree equals the outdegree, or",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q089",
+    "question": "How many ways are there to form the sum 5 using the coins {1, 3, 4}?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "There are 6 ways to form the sum 5.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      79
+    ],
+    "supporting_text": "For example, if coins = {1,3,4} and x = 5, there are a total of 6 ways",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q090",
+    "question": "Why does the algorithm reverse every edge before forming strongly connected components in the second phase?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Reversing the edges guarantees that during the second search, the algorithm will find strongly connected components that do not contain extra nodes, preventing the component from \"leaking\" into other parts of the graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      169
+    ],
+    "supporting_text": "First, the algorithm reverses every edge in the graph. This guarantees that during the second search, we will always ﬁnd strongly connected components that do not have extra nodes. ... Note that since all edges are reversed, the component does not ”leak” to other parts in the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q091",
+    "question": "Why is sorting often used as a subroutine in efficient algorithm design?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Sorting is used as a subroutine because it is often easier to process data when the elements are in a sorted order.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      35
+    ],
+    "supporting_text": "Many efﬁcient algorithms use sorting as a subroutine, because it is often easier to process data if the elements are in a sorted order.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q092",
+    "question": "In the set of integers, what does the expression ∀x(∃y(y < x)) signify?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It means that for each element x in the set, there exists an element y in the set that is smaller than x.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      23
+    ],
+    "supporting_text": "∀x(∃y(y < x)) means that for each element x in the set, there is an element y in the set such that y is smaller than x. This is true in the set of integers",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q093",
+    "question": "What is the optimal value of x that minimizes the sum of squared differences for a set of numbers a1, a2, ..., an?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The optimal value for x is the average of the numbers (s/n, where s is the sum of all elements).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      72
+    ],
+    "supporting_text": "In the general case, the best choice for x is the average of the numbers... and the minimum value is the average of the roots x = s/n, i.e., the average of the numbers a1,a2,...,an.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q094",
+    "question": "How can the computational efficiency of counting paths in a grid be improved based on symmetry?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "You can calculate only the paths that start with a specific move (either down or right) and then multiply that result by two, as the paths are symmetric about the diagonal.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      62
+    ],
+    "supporting_text": "In any solution, we ﬁrst move one step down or right. There are always two paths that are symmetric about the diagonal of the grid after the ﬁrst step. Hence, we can decide that we always ﬁrst move one step down (or right), and ﬁnally multiply the number of solutions by two.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q095",
+    "question": "What are the three conditions for a valid tiling solution in an n × m grid, and why should the grid be rotated so that m is the shorter side?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A solution is valid if row 1 contains no ⊔, row n contains no ⊓, and all consecutive rows are compatible. The grid should be rotated so that m is the shorter side because the time complexity is dominated by the factor 4^2m.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      85,
+      86
+    ],
+    "supporting_text": "A solution is valid if row 1 does not contain the character ⊔, row n does not contain the character ⊓, and all consecutive rows are compatible... In practice, it is a good idea to rotate the grid so that the shorter side has length m, because the factor 4^2m dominates the time complexity.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q096",
+    "question": "Why is the value '242' included in the text?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The excerpt provides no context or explanation for the value '242'.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      252
+    ],
+    "supporting_text": "242",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q097",
+    "question": "How does the find function determine the representative of an element x?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It finds the representative by following the chain that begins at x until it reaches an element that points to itself (where x == link[x]).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      156
+    ],
+    "supporting_text": "The function find returns the representative for an element x. The representative can be found by following the chain that begins at x.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q098",
+    "question": "According to Hall's theorem, what condition must be satisfied for a bipartite graph to contain a matching that includes all left nodes?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "For every subset of left nodes X, the condition |X| ≤ |f(X)| must hold, where f(X) is the set of neighbors of X.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      199
+    ],
+    "supporting_text": "Assume that we want to ﬁnd a matching that contains all left nodes. Let X be any set of left nodes and let f (X) be the set of their neighbors. According to Hall’s theorem, a matching that contains all left nodes exists exactly when for each X, the condition |X| ≤|f (X)| holds.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q099",
+    "question": "Who authored the 1952 paper on constructing minimum-redundancy codes?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "D. A. Huffman.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      293
+    ],
+    "supporting_text": "[40] D. A. Huffman. A method for the construction of minimum-redundancy codes. Proceedings of the IRE, 40(9):1098–1101, 1952.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q100",
+    "question": "In the Ford–Fulkerson algorithm, how are the flow and edge weights updated after a path is selected?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The flow increases by the smallest edge weight (x) on the path, the weight of each edge on the path decreases by x, and the weight of each reverse edge increases by x.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      192,
+      193
+    ],
+    "supporting_text": "After choosing the path, the ﬂow increases by x units, where x is the smallest edge weight on the path. In addition, the weight of each edge on the path decreases by x and the weight of each reverse edge increases by x.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q101",
+    "question": "Who authored the paper titled 'Efﬁcient range minimum queries using binary indexed trees'?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "M. Dima and R. Ceterchi.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      292
+    ],
+    "supporting_text": "[16] M. Dima and R. Ceterchi. Efﬁcient range minimum queries using binary indexed trees. Olympiad in Informatics, 9(1):39–44, 2015.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q102",
+    "question": "How do you determine whether to add or subtract the size of an intersection in the general inclusion-exclusion principle?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "You add the size of the intersection if it contains an odd number of sets, and you subtract it if it contains an even number of sets.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      223
+    ],
+    "supporting_text": "In the general case, the size of the union X1 ∪X2 ∪··· ∪Xn can be calculated by going through all possible intersections that contain some of the sets X1, X2,..., Xn. If the intersection contains an odd number of sets, its size is added to the answer, and otherwise its size is subtracted from the answer.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q103",
+    "question": "Why is the '*' character necessary in a trie, and what does it represent?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The '*' character is necessary because a string in the set may be a prefix of another string; it indicates that a string in the set ends at that specific node.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      253,
+      254
+    ],
+    "supporting_text": "The character * in a node means that a string in the set ends at the node. Such a character is needed, because a string may be a preﬁx of another string. For example, in the above trie, THE is a preﬁx of THERE.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q104",
+    "question": "What is the subject of Part I of the book?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Basic techniques.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      11
+    ],
+    "supporting_text": "Part I\nBasic techniques",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q105",
+    "question": "How would the resulting Huffman codewords change if the initial frequency of character A was increased to 10 while all other frequencies remained the same?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      74
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q106",
+    "question": "Which bitwise operation is used to represent the intersection of two sets, a and b?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The intersection of sets a and b is represented by the bitwise operation a & b.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      109
+    ],
+    "supporting_text": "intersection a∩b a & b",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q107",
+    "question": "What is the page number of the provided excerpt?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The excerpt is from page viii.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      8
+    ],
+    "supporting_text": "viii",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q108",
+    "question": "Why is the time complexity of the first algorithm for finding the maximum subarray sum O(n^3)?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The algorithm has a time complexity of O(n^3) because it utilizes three nested loops to iterate through all possible subarrays and calculate their sums.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      32
+    ],
+    "supporting_text": "The time complexity of the algorithm is O(n3), because it consists of three nested loops that go through the input.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q109",
+    "question": "How is the Grundy number of a game state defined?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The Grundy number of a game state is defined as mex({g1, g2,..., gn}).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      248
+    ],
+    "supporting_text": "The Grundy number of a game state is\nmex({g1, g2,..., gn}),",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q110",
+    "question": "What is the range of integers that can be stored in a signed n-bit variable, and how is the sign bit determined?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A signed n-bit variable can store integers between -2^(n-1) and 2^(n-1) - 1. The first bit serves as the sign bit, where 0 represents a nonnegative number and 1 represents a negative number.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      104,
+      105
+    ],
+    "supporting_text": "A signed variable of n bits can contain any integer between −2n−1 and 2n−1 −1. The ﬁrst bit in a signed representation is the sign of the number (0 for nonnegative numbers and 1 for negative numbers), and the remaining n−1 bits contain the magnitude of the number.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q111",
+    "question": "Which g++ compiler function should you use to determine if the number of set bits in an integer is even or odd?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "__builtin_parity(x)",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      108
+    ],
+    "supporting_text": "__builtin_parity(x): the parity (even or odd) of the number of ones",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q112",
+    "question": "What is the time complexity for accessing elements in a C++ map versus an unordered_map?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Accessing elements in a map takes O(logn) time, while accessing elements in an unordered_map takes O(1) time on average.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      48
+    ],
+    "supporting_text": "the structure map is based on a balanced binary tree and accessing elements takes O(logn) time, while the structure unordered_map uses hashing and accessing elements takes O(1) time on average.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q113",
+    "question": "How does the Edmonds–Karp algorithm differ from the scaling algorithm in terms of the search strategy used to find paths?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The Edmonds–Karp algorithm uses breadth-first search to find paths with the minimum number of edges, whereas the scaling algorithm uses depth-first search to find paths where each edge weight meets a specific threshold value.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      195
+    ],
+    "supporting_text": "The Edmonds–Karp algorithm [18] chooses each path so that the number of edges on the path is as small as possible. This can be done by using breadth-ﬁrst search instead of depth-ﬁrst search for ﬁnding paths. ... The scaling algorithm [2] uses depth-ﬁrst search to ﬁnd paths where each edge weight is at least a threshold value.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q114",
+    "question": "What condition must be met by every pair of non-adjacent nodes in a graph for it to contain a Hamiltonian path according to Ore’s theorem?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The sum of the degrees of each non-adjacent pair of nodes must be at least n.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      187
+    ],
+    "supporting_text": "Ore’s theorem: If the sum of degrees of each non-adjacent pair of nodes is at least n, the graph contains a Hamiltonian path.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q115",
+    "question": "Given a number n with a prime factorization involving exponents αi, what are the formulas for the number of factors (τ(n)), the sum of factors (σ(n)), and the product of factors (μ(n))?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The formulas are: τ(n) = ∏(αi + 1), σ(n) = ∏(pai+1 i - 1) / (pi - 1), and μ(n) = n^(τ(n)/2).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      207,
+      208
+    ],
+    "supporting_text": "The number of factors of a number n is τ(n) = Π_{i=1}^{k} (αi +1)... The sum of factors of n is σ(n) = Π_{i=1}^{k} (pai+1 i −1)/(pi −1)... The product of factors of n is μ(n) = n^{τ(n)/2}",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q116",
+    "question": "Which part of the book covers advanced topics?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Part III covers advanced topics.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      205
+    ],
+    "supporting_text": "Part III\nAdvanced topics",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q117",
+    "question": "How does the Bellman–Ford algorithm determine when the shortest distances from the starting node to all other nodes have been calculated?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The distances are considered final once the algorithm reaches a point where no edge can further reduce any distance.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      133,
+      134
+    ],
+    "supporting_text": "After this, no edge can reduce any distance. This means that the distances are ﬁnal, and we have successfully calculated the shortest distances from the starting node to all nodes of the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q118",
+    "question": "What two properties must a subgraph possess to be considered a spanning tree of a given graph?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "A spanning tree must be connected and acyclic, and it must include all nodes of the original graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      151
+    ],
+    "supporting_text": "A spanning tree of a graph consists of all nodes of the graph and some of the edges of the graph so that there is a path between any two nodes. Like trees in general, spanning trees are connected and acyclic.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q119",
+    "question": "How many total outcomes are there when choosing 3 cards from a deck of 52?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "There are 52 choose 3 outcomes.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      235
+    ],
+    "supporting_text": "There are a total of (52 choose 3) outcomes, because we choose 3 cards from 52 cards.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q120",
+    "question": "What is a key property of Dijkstra’s algorithm regarding the distance assigned to a node when it is selected?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Whenever a node is selected by the algorithm, its distance is considered final.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      137
+    ],
+    "supporting_text": "A remarkable property in Dijkstra’s algorithm is that whenever a node is selected, its distance is ﬁnal.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q121",
+    "question": "What is the page number immediately preceding page 195, based on the provided text?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Page 194.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      204
+    ],
+    "supporting_text": "194",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q122",
+    "question": "In a segment tree representation where tree[k] is a node, what are the indices of its parent and its children?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The parent is tree[⌊k/2⌋] and the children are tree[2k] and tree[2k+1].",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      101
+    ],
+    "supporting_text": "Using this representation, the parent of tree[k] is tree[⌊k/2⌋], and its children are tree[2k] and tree[2k +1].",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q123",
+    "question": "What is the primary drawback of using an adjacency matrix to represent a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The matrix contains n² elements, most of which are usually zero, making it unsuitable for large graphs.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      125
+    ],
+    "supporting_text": "The drawback of the adjacency matrix representation is that the matrix contains n2 elements, and usually most of them are zero. For this reason, the representation cannot be used if the graph is large.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q124",
+    "question": "How does the computational complexity of finding a minimum general path cover compare to the complexity of finding a minimum node-disjoint path cover?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      202
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q125",
+    "question": "How can the area of a quadrilateral with vertices (x1, y1), (x2, y2), (x3, y3), and (x4, y4) be calculated without using special cases?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The area can be calculated using the general formula: x1y2 − x2y1 + x2y3 − x3y2 + x3y4 − x4y3 + x4y1 − x1y4.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      276
+    ],
+    "supporting_text": "Namely, there is a general formula x1y2 −x2y1 + x2y3 −x3y2 + x3y4 −x4y3 + x4y1 −x1y4, that calculates the area of a quadrilateral whose vertices are (x1, y1), (x2, y2), (x3, y3) and (x4, y4). This formula is easy to implement, there are no special cases, and we can even generalize the formula to all polygons.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q126",
+    "question": "Why is the edge 2–3 excluded from the tree?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It is not included because nodes 2 and 3 are already in the same component.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      153
+    ],
+    "supporting_text": "The next edge in the list is the edge 2–3, but it will not be included in the tree, because nodes 2 and 3 are already in the same component.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q127",
+    "question": "What is the primary requirement for using Mo’s algorithm to process range queries?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The array must be static, meaning the values do not change between queries.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      265
+    ],
+    "supporting_text": "Mo’s algorithm1 can be used in many problems that require processing range queries in a static array, i.e., the array values do not change between the queries.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q128",
+    "question": "Why is it impossible to form a topological sort for a directed graph that contains a cycle?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It is impossible because no node within the cycle can appear before the other nodes of the cycle in the ordering.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      159
+    ],
+    "supporting_text": "a cycle, it is not possible to form a topological sort, because no node of the cycle can appear before the other nodes of the cycle in the ordering.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q129",
+    "question": "How does a deque differ from a vector in terms of its available operations?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Unlike a vector, a deque allows for adding and removing elements from both ends of the array by providing push_front and pop_front functions in addition to push_back and pop_back.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      52
+    ],
+    "supporting_text": "Like a vector, a deque provides the functions push_back and pop_back, but it also includes the functions push_front and pop_front which are not available in a vector.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q130",
+    "question": "How does memoization improve the efficiency of the recursive coin problem solution?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "It stores previously calculated results in an array (value[x]), ensuring that each parameter x is calculated recursively only once. Subsequent calls for the same x retrieve the value directly from the array rather than recomputing it.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      77,
+      78
+    ],
+    "supporting_text": "The function checks from ready[x] if solve(x) has already been stored in value[x], and if it is, the function directly returns it. Otherwise the function calculates the value of solve(x) recursively and stores it in value[x]. This function works efﬁciently, because the answer for each parameter x is calculated recursively only once.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q131",
+    "question": "How is the total time complexity of a recursive function determined?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The total time complexity is the product of the number of times the function is called and the time complexity of a single call.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      29
+    ],
+    "supporting_text": "The time complexity of a recursive function depends on the number of times the function is called and the time complexity of a single call. The total time complexity is the product of these values.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q132",
+    "question": "How can you determine if a connected graph component contains a cycle by comparing its node and edge counts?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "If a component with c nodes contains c or more edges, it must contain a cycle.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      132
+    ],
+    "supporting_text": "If a component contains c nodes and no cycle, it must contain exactly c −1 edges (so it has to be a tree). If there are c or more edges, the component surely contains a cycle.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q133",
+    "question": "Can you access elements in a set using the [] notation, and what happens if you try to insert a duplicate value into a set?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "No, it is not possible to access elements in a set using the [] notation. Additionally, the function insert never adds an element to the set if it is already present, as all elements in a set must be distinct.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      47
+    ],
+    "supporting_text": "A set can be used mostly like a vector, but it is not possible to access the elements using the [] notation. An important property of sets is that all their elements are distinct. Thus, the function count always returns either 0 (the element is not in the set) or 1 (the element is in the set), and the function insert never adds an element to the set if it is already there.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q134",
+    "question": "How can you determine if a graph contains a cycle during a traversal?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A graph contains a cycle if, during traversal, you encounter a node whose neighbor has already been visited, excluding the node from which you immediately arrived in the current path.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      130,
+      131
+    ],
+    "supporting_text": "A graph contains a cycle if during a graph traversal, we ﬁnd a node whose neighbor (other than the previous node in the current path) has already been visited.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q135",
+    "question": "If events A and B are disjoint, how is the probability of their union, P(A ∪ B), calculated?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "When events A and B are disjoint, the probability of their union is calculated as P(A ∪ B) = P(A) + P(B).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      237
+    ],
+    "supporting_text": "If the events A and B are disjoint, i.e., A ∩B is empty, the probability of the event A ∪B is simply P(A ∪B) = P(A)+ P(B).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q136",
+    "question": "What are the specific programming languages recommended for competitive programming, and how does the choice of language impact execution time constraints?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      1
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q137",
+    "question": "How many labeled trees exist for a graph with n nodes?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "There are n^(n-2) labeled trees.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      226
+    ],
+    "supporting_text": "Hence, the number of labeled trees of n nodes equals nn−2, the number of Prüfer codes of size n.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q138",
+    "question": "Under what condition is the modular inverse of x modulo m defined?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The modular inverse x⁻¹ exists when xx⁻¹ mod m = 1.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      212
+    ],
+    "supporting_text": "The inverse of x modulo m is a number x⁻¹ such that xx⁻¹ mod m = 1.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q139",
+    "question": "In Andrew’s algorithm, what condition is checked after adding a point to the upper hull to ensure the correct shape?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The algorithm ensures that the last line segment in the hull does not turn left; if it does, the second last point is repeatedly removed until the condition is met.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      289
+    ],
+    "supporting_text": "Always after adding a point to the hull, we make sure that the last line segment in the hull does not turn left. As long as it turns left, we repeatedly remove the second last point from the hull.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q140",
+    "question": "How would the game's strategy or the calculation of Grundy numbers change if the movement rules were modified to allow the figure to move right or down instead of left or up?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      249
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q141",
+    "question": "How is a topological sort of a graph constructed using the state-based search method?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A topological sort is obtained by adding each node to a list once its state becomes 2, and then reversing the order of that list.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      159,
+      160
+    ],
+    "supporting_text": "adding each node to a list when the state of the node becomes 2. This list in reverse order is a topological sort.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q142",
+    "question": "When finding the nearest smaller element for the current element in an array, what condition must be met before adding the current element to the stack?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "You must first remove elements from the stack until either the top element is smaller than the current element or the stack is empty, and then report the nearest smaller element (or note if none exists).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      89
+    ],
+    "supporting_text": "At each array position, we remove elements from the stack until the top element is smaller than the current element, or the stack is empty. Then, we report that the top element is the nearest smaller element of the current element, or if the stack is empty, there is no such element. Finally, we add the current element to the stack.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q143",
+    "question": "What is the numerical value associated with the beginning of the excerpt on page 190?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The numerical value is 180.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      190
+    ],
+    "supporting_text": "180",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q144",
+    "question": "What is the time complexity of finding the kth ancestor of a node by performing a sequence of k moves?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The time complexity is O(k).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      173
+    ],
+    "supporting_text": "An easy way to calculate any value of ancestor(x,k) is to perform a sequence of k moves in the tree. However, the time complexity of this method is O(k)",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q145",
+    "question": "How does the memory complexity of an algorithm influence its overall efficiency compared to the time complexity considerations discussed in the excerpt?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      31
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q146",
+    "question": "Which page numbers contain the sections on sorting, binary search, and data structures?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "Sorting begins on page 25, binary search begins on page 31, and data structures begin on page 35.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      2,
+      3
+    ],
+    "supporting_text": "3 Sorting 25... 3.3 Binary search 31... 4 Data structures 35",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q147",
+    "question": "How do you calculate the Grundy number of a game that can be divided into independent subgames?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The Grundy number of the game is mex({g1, g2, ..., gn}), where g1, g2, ..., gn are the Grundy numbers of the independent subgames.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      250
+    ],
+    "supporting_text": "Sometimes a move in a game divides the game into subgames that are independent of each other. In this case, the Grundy number of the game is mex({g1, g2,..., gn}),",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q148",
+    "question": "What is the total number of pages in the book?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "56.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      66
+    ],
+    "supporting_text": "56",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q149",
+    "question": "How can the Z-algorithm be used to find occurrences of a pattern p in a string s?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "One can construct a string p#s using a special character # that does not occur in the strings, and the Z-array of this string will indicate the positions where p occurs in s by containing the length of p.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      260
+    ],
+    "supporting_text": "In this problem, we can construct a string p#s, where p and s are separated by a special character # that does not occur in the strings. The Z-array of p#s tells us the positions where p occurs in s, because such positions contain the length of p.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q150",
+    "question": "What is the formula for calculating the area of a polygon using Pick’s theorem?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The area is a + b/2 - 1, where 'a' is the number of integer points inside the polygon and 'b' is the number of integer points on the boundary.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      282
+    ],
+    "supporting_text": "According to Pick’s theorem, the area of the polygon is a+ b/2−1, where a is the number of integer points inside the polygon and b is the number of integer points on the boundary of the polygon.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q151",
+    "question": "According to Dilworth’s theorem, what is equal to the size of a maximum antichain in a directed acyclic graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The size of a minimum general path cover.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      203
+    ],
+    "supporting_text": "Dilworth’s theorem states that in a directed acyclic graph, the size of a minimum general path cover equals the size of a maximum antichain.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q152",
+    "question": "How many nodes are changed in a segment tree during an update operation?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Each update changes O(log n) nodes.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      100
+    ],
+    "supporting_text": "The path from bottom to top always consists of O(logn) nodes, so each update changes O(logn) nodes in the tree.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q153",
+    "question": "Why is the assumption that there is a finite number of primes considered a contradiction?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "If there were a finite set of all primes P = {p1, p2,..., pn}, one could construct a new prime (p1p2 ··· pn + 1) that is larger than all elements in P, contradicting the assumption that P contains all primes.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      208
+    ],
+    "supporting_text": "If the number of primes would be ﬁnite, we could construct a set P = {p1, p2,..., pn} that would contain all the primes... However, using P, we could form a new prime p1p2 ··· pn +1 that is larger than all elements in P. This is a contradiction, and the number of primes has to be inﬁnite.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q154",
+    "question": "What are the two primary operations supported by a union-find structure, and what is their time complexity?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The two operations are unite (joining two sets) and find (finding the representative of a set). Both operations run in O(logn) time.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      155
+    ],
+    "supporting_text": "Two O(logn) time operations are supported: the unite operation joins two sets, and the find operation ﬁnds the representative of the set that contains a given element",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q155",
+    "question": "How can you optimize the calculation of Hamming distances when the string length k is less than or equal to 32?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "You can store the bit strings as integers and use bitwise operations, specifically the XOR operator followed by the __builtin_popcount function.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      110
+    ],
+    "supporting_text": "However, if k is small, we can optimize the code by storing the bit strings as integers and calculating the Hamming distances using bit operations. In particular, if k ≤32, we can just store the strings as int values and use the following function to calculate distances: int hamming(int a, int b) { return __builtin_popcount(a^b); }",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q156",
+    "question": "In the alternative binary search implementation, how does the jump length change during the process and what is the final state after the jumps are completed?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The initial jump length is n/2, and it is halved at each step (n/4, n/8, etc.) until the length reaches 1. After the jumps, the target element is either found or it is determined that it does not appear in the array.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      41,
+      42
+    ],
+    "supporting_text": "The search goes through the array from left to right, and the initial jump length is n/2. At each step, the jump length will be halved: ﬁrst n/4, then n/8, n/16, etc., until ﬁnally the length is 1. After the jumps, either the target element has been found or we know that it does not appear in the array.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q157",
+    "question": "What is the time complexity of searching for an element in an arbitrary array?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The time complexity is O(n), as it may be necessary to check every element in the array.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      41
+    ],
+    "supporting_text": "The time complexity of this approach is O(n), because in the worst case, it is necessary to check all elements of the array. If the order of the elements is arbitrary, this is also the best possible approach",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q158",
+    "question": "Why is O(n) often considered the best possible time complexity for an algorithm?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It is often the best possible time complexity because it is usually necessary to access each input element at least once to determine the answer.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      30
+    ],
+    "supporting_text": "O(n) A linear algorithm goes through the input a constant number of times. This is often the best possible time complexity, because it is usually necessary to access each input element at least once before reporting the answer.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q159",
+    "question": "In which journal was S. Warshall's article 'A theorem on boolean matrices' published?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Journal of the ACM",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      295
+    ],
+    "supporting_text": "[70] S. Warshall. A theorem on boolean matrices. Journal of the ACM, 9(1):11–12, 1962.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q160",
+    "question": "How are IOI contestants evaluated even when they are part of a team?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Even if contestants are divided into teams, they compete as individuals.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      25
+    ],
+    "supporting_text": "Even if the contestants are divided into teams, they compete as individuals.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q161",
+    "question": "In what order does breadth-first search visit the nodes of a graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It visits nodes in increasing order of their distance from the starting node, processing them level by level.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      129
+    ],
+    "supporting_text": "Breadth-ﬁrst search (BFS) visits the nodes in increasing order of their distance from the starting node. ... Breadth-ﬁrst search goes through the nodes one level after another.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q162",
+    "question": "When using the Bellman–Ford algorithm, what condition must be met regarding cycles in the graph, and what can the algorithm do if this condition is not met?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The graph must not contain a cycle with negative length. If the graph does contain a negative cycle, the algorithm can detect it.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      132,
+      133
+    ],
+    "supporting_text": "The algorithm can process all kinds of graphs, provided that the graph does not contain a cycle with negative length. If the graph contains a negative cycle, the algorithm can detect this.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q163",
+    "question": "Which data structures can be used to perform range updates and point queries in O(logn) time for tree values?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "A binary indexed tree or a segment tree.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      175,
+      176
+    ],
+    "supporting_text": "Thus, to support both the operations, we should be able to increase all values in a range and retrieve a single value. This can be done in O(logn) time using a binary indexed or segment tree (see Chapter 9.4).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q164",
+    "question": "How can the bipartite maximum matching problem be solved using the maximum flow problem?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "It can be solved by adding a source and a sink node to the graph, with edges directed from the source to each left node and from each right node to the sink. The size of the maximum matching in the original graph will equal the size of the maximum flow in this new graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      197,
+      198
+    ],
+    "supporting_text": "We can reduce the bipartite maximum matching problem to the maximum ﬂow problem by adding two new nodes to the graph: a source and a sink. We also add edges from the source to each left node and from each right node to the sink. After this, the size of a maximum ﬂow in the graph equals the size of a maximum matching in the original graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q165",
+    "question": "In a graph with m edges, what is the expected number of edges whose endpoints have different colors when nodes are colored randomly?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The expected number of edges is m/2.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      243
+    ],
+    "supporting_text": "In a random coloring, the probability that the endpoints of a single edge have different colors is 1/2. Hence, the expected number of edges whose endpoints have different colors is m/2.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q166",
+    "question": "In a directed, weighted graph, what constraint must be satisfied at each intermediate node during a maximum flow calculation?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "At each intermediate node, the total incoming flow must be equal to the total outgoing flow.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      191
+    ],
+    "supporting_text": "In each intermediate node, the incoming and outgoing flow has to be equal.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q167",
+    "question": "In what order are the nodes of the component graph processed when assigning values to variables?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The nodes are processed in a reverse topological sort order.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      171
+    ],
+    "supporting_text": "the nodes of the component graph in a reverse topological sort order.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q168",
+    "question": "How does dividing a grid into blocks of N consecutive columns optimize the algorithm's performance?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It allows the algorithm to process N columns simultaneously using bit operations, reducing the time complexity to O(n³/N).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      111
+    ],
+    "supporting_text": "To optimize this algorithm, we divide the grid into blocks of columns such that each block consists of N consecutive columns. Then, each row is stored as a list of N-bit numbers that describe the colors of the squares. Now we can process N columns at the same time using bit operations... The resulting algorithm works in O(n3/N) time.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q169",
+    "question": "What is the first step of Kruskal's algorithm?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Sorting the edges in increasing order of their weights.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      152
+    ],
+    "supporting_text": "The ﬁrst step of the algorithm is to sort the edges in increasing order of their weights.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q170",
+    "question": "What is the claim made by Lagrange’s theorem regarding positive integers?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Lagrange’s theorem states that any positive integer can be expressed as the sum of four squares (a² + b² + c² + d²).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      215
+    ],
+    "supporting_text": "Lagrange’s theorem states that every positive integer can be represented as a sum of four squares, i.e., a2 + b2 + c2 + d2.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q171",
+    "question": "How does the use of hashing improve the time complexity of comparing string substrings?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Hashing allows each comparison to take O(1) time by comparing hash values instead of the substrings themselves, reducing the overall time complexity from O(n^2) to O(n).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      256
+    ],
+    "supporting_text": "We can make the brute force algorithm more efﬁcient by using hashing, because the algorithm compares substrings of strings. Using hashing, each comparison only takes O(1) time, because only hash values of substrings are compared. This results in an algorithm with time complexity O(n)",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q172",
+    "question": "When using dynamic programming to find the diameter of a tree, how are the values toLeaf(x) and maxLength(x) calculated for each node x?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "To calculate toLeaf(x), you choose a child c with the maximum toLeaf(c) and add one. To calculate maxLength(x), you choose two distinct children a and b that maximize the sum toLeaf(a) + toLeaf(b) and add two to that sum.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      145,
+      146
+    ],
+    "supporting_text": "First, to calculate toLeaf(x), we go through the children of x, choose a child c with maximum toLeaf(c) and add one to this value. Then, to calculate maxLength(x), we choose two distinct children a and b such that the sum toLeaf(a)+toLeaf(b) is maximum and add two to this sum.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q173",
+    "question": "How can the subset sum problem be solved by dividing a list of numbers into two smaller lists A and B?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "Divide the list into two halves A and B, generate all possible subset sums for each (SA and SB), and then check if any element from SA added to an element from SB equals the target sum x.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      65
+    ],
+    "supporting_text": "The idea is to divide the list into two lists A and B such that both lists contain about half of the numbers. The ﬁrst search generates all subsets of A and stores their sums to a list SA. Correspondingly, the second search creates a list SB from B. After this, it sufﬁces to check if it is possible to choose one element from SA and another element from SB such that their sum is x.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q174",
+    "question": "How does Merge sort calculate the middle element of a subarray array[a...b]?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It calculates the position of the middle element using the formula k = ⌊(a+ b)/2⌋.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      37
+    ],
+    "supporting_text": "Calculate the position of the middle element: k = ⌊(a+ b)/2⌋.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q175",
+    "question": "Why is the greedy strategy of always selecting the shortest event not always correct?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It can fail because selecting a short event might prevent the selection of multiple longer events that could have been chosen instead.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      69
+    ],
+    "supporting_text": "However, selecting short events is not always a correct strategy. For example, the algorithm fails in the following case: If we select the short event, we can only select one event. However, it would be possible to select both long events.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q176",
+    "question": "What is the lower bound for the time complexity of comparison-based sorting algorithms?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "O(n log n).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      38
+    ],
+    "supporting_text": "Is it possible to sort an array faster than in O(nlogn) time? It turns out that this is not possible when we restrict ourselves to sorting algorithms that are based on comparing array elements.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q177",
+    "question": "Why is it inadvisable to use $B = 2^{32}$ or $B = 2^{64}$ when calculating string hashes?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "It is a poor choice because it is possible to construct inputs that will always result in collisions when using constants in the form of $2^x$.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      256,
+      257
+    ],
+    "supporting_text": "Some people use constants B = 2^32 and B = 2^64, which is convenient, because operations with 32 and 64 bit integers are calculated modulo 2^32 and 2^64. However, this is not a good choice, because it is possible to construct inputs that always generate collisions when constants of the form 2^x are used [51].",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q178",
+    "question": "What is the definition of a strongly connected graph?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "A graph is strongly connected if there is a path from any node to all other nodes in the graph.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      167
+    ],
+    "supporting_text": "A graph is strongly connected if there is a path from any node to all other nodes in the graph.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q179",
+    "question": "When do two line segments intersect at a point that is not one of their vertices?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "They intersect when both points c and d are on different sides of a line through a and b, and points a and b are on different sides of a line through c and d.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      279
+    ],
+    "supporting_text": "In this case, the line segments intersect exactly when both points c and d are on different sides of a line through a and b, and points a and b are on different sides of a line through c and d.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q180",
+    "question": "What is the time complexity of breadth-first search?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The time complexity of breadth-first search is O(n + m), where n is the number of nodes and m is the number of edges.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      130
+    ],
+    "supporting_text": "Like in depth-ﬁrst search, the time complexity of breadth-ﬁrst search is O(n+ m), where n is the number of nodes and m is the number of edges.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q181",
+    "question": "For the formula L1 = (x2 ∨¬x1)∧(¬x1 ∨¬x2)∧(x1 ∨x3)∧(¬x2 ∨¬x3)∧(x1 ∨x4), what is the value of x3 when the formula is true?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "x3 = true",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      170
+    ],
+    "supporting_text": "L1 = (x2 ∨¬x1)∧(¬x1 ∨¬x2)∧(x1 ∨x3)∧(¬x2 ∨¬x3)∧(x1 ∨x4) is true when the variables are assigned as follows: ... x3 = true",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q182",
+    "question": "What is the total length of a De Bruijn sequence for a fixed alphabet of k characters and substrings of length n?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The length of the string is kn + n - 1.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      188
+    ],
+    "supporting_text": "The length of such a string is kn + n−1 characters.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q183",
+    "question": "What is the time complexity of the Ford–Fulkerson algorithm, and how does the choice of path-finding strategy affect its performance?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      192
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q184",
+    "question": "Why is an absolute value taken when calculating the area of a polygon using the trapezoid summation formula?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The absolute value is taken because the sum can be positive or negative depending on whether the boundary of the polygon is traversed clockwise or counterclockwise.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      281
+    ],
+    "supporting_text": "Note that the absolute value of the sum is taken, because the value of the sum may be positive or negative, depending on whether we walk clockwise or counterclockwise along the boundary of the polygon.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q185",
+    "question": "If the longest path starting from node p goes through node x, how is the maximum length of a path starting from p determined?",
+    "type": "multi_chunk",
+    "answerable": true,
+    "reference_answer": "The maximum length is determined as maxLength2(p) + 1.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      147,
+      148
+    ],
+    "supporting_text": "Finally, if the path that corresponds to maxLength1(p) goes through x, we conclude that the maximum length is maxLength2(p)+1",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q186",
+    "question": "How does the performance of Algorithm 3 compare to Algorithm 1 regarding their data structures?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Algorithm 3 performs a simple, one-time procedure at the beginning and runs in linear time, whereas Algorithm 1 maintains a complex balanced binary tree throughout the entire process.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      56
+    ],
+    "supporting_text": "simple procedure and it is done only once at the beginning of Algorithm 3, and the rest of the algorithm works in linear time. On the other hand, Algorithm 1 maintains a complex balanced binary tree during the whole algorithm.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q187",
+    "question": "What are the three types of events processed by a sweep line algorithm when checking for line segment intersections?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The three types of events are: (1) a horizontal segment begins, (2) a horizontal segment ends, and (3) a vertical segment.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      286
+    ],
+    "supporting_text": "The idea is to process the endpoints of the line segments from left to right and focus on three types of events:\n(1) horizontal segment begins\n(2) horizontal segment ends\n(3) vertical segment",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q188",
+    "question": "What is the content of page 234 in the source material?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "Page 234 contains no specific information as the excerpt provided is only the number 234.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      244
+    ],
+    "supporting_text": "234",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q189",
+    "question": "How can you perform a range update on an array to increase all values in the range [a, b] by x using a binary indexed tree?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "You increase the value at position a by x and decrease the value at position b + 1 by x.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      104
+    ],
+    "supporting_text": "More generally, to increase the values in range [a,b] by x, we increase the value at position a by x and decrease the value at position b +1 by x.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q190",
+    "question": "What is the time complexity of the dynamic programming algorithm used to calculate the path sums in an N x N grid?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The time complexity is O(n^2).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      82
+    ],
+    "supporting_text": "The time complexity of the algorithm is O(n2).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q191",
+    "question": "What prior knowledge is required to begin this book on competitive programming?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "It is assumed that the reader already knows the basics of programming, but no previous background in competitive programming is necessary.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      9
+    ],
+    "supporting_text": "It is assumed that you already know the basics of programming, but no previous background in competitive programming is needed.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q192",
+    "question": "How is the probability P(A) of an event A calculated based on individual outcome probabilities?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The probability P(A) is calculated as the sum of the probabilities of all outcomes x that belong to the set A, using the formula P(A) = Σ p(x) for x ∈ A.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      236
+    ],
+    "supporting_text": "the probability P(A) of an event A can be calculated as a sum of probabilities of outcomes using the formula P(A) = Σ x∈A p(x).",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q193",
+    "question": "How is the expression 'x mod m' defined?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "It is defined as the remainder when x is divided by m.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      16
+    ],
+    "supporting_text": "We denote by x mod m the remainder when x is divided by m.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q194",
+    "question": "Based on the provided example, what is the edit distance between LOVE and MOVIE, and how is it determined when the last characters of two strings are equal?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "The edit distance between LOVE and MOVIE is 2. When the last characters are equal, the edit distance is equal to the edit distance of the prefixes (the strings excluding the last characters).",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      85
+    ],
+    "supporting_text": "The lower-right corner of the table tells us that the edit distance between LOVE and MOVIE is 2. The last characters of LOVE and MOVIE are equal, so the edit distance between them equals the edit distance between LOV and MOVI.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q195",
+    "question": "How does the time complexity of the Euler tour technique compare to the alternative approaches for solving the lowest common ancestor problem discussed in the same chapter?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      178
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q196",
+    "question": "In the standard bit representation of a subset, which element of the set does the last bit correspond to?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The last bit corresponds to element 0.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      58
+    ],
+    "supporting_text": "The usual convention is that the last bit corresponds to element 0, the second last bit corresponds to element 1, and so on.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q197",
+    "question": "When is a lazy update propagated to the children of a node in a segment tree?",
+    "type": "conceptual",
+    "answerable": true,
+    "reference_answer": "A lazy update is propagated to a node's children only when it is necessary, specifically before the node itself is processed during an update or query.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      270
+    ],
+    "supporting_text": "Both in updates and queries, the value of a lazy update is always propagated to the children of the node before processing the node. The idea is that updates will be propagated downwards only when it is necessary, which guarantees that the operations are always efﬁcient.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q198",
+    "question": "How does the space complexity of a square root decomposition approach compare to that of a segment tree when storing the sum of elements for an array of size n?",
+    "type": "out_of_scope",
+    "answerable": false,
+    "reference_answer": null,
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      261
+    ],
+    "supporting_text": "",
+    "verified": true,
+    "notes": "Must be hand-checked by searching all PDFs."
+  },
+  {
+    "id": "q199",
+    "question": "To whom is the algorithm described in the provided code snippet attributed?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The algorithm is attributed to R. W. Floyd.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      166
+    ],
+    "supporting_text": "The idea of the algorithm is mentioned in [46] and attributed to R. W. Floyd; however, it is not known if Floyd actually discovered the algorithm.",
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": "q200",
+    "question": "When minimizing the sum |a1 − x| + |a2 − x| + ... + |an − x|, what value should be chosen for x?",
+    "type": "factual",
+    "answerable": true,
+    "reference_answer": "The median of the numbers, which is the middle number after sorting.",
+    "source_file": "cp_book.pdf",
+    "source_pages": [
+      71
+    ],
+    "supporting_text": "In the general case, the best choice for x is the median of the numbers, i.e., the middle number after sorting.",
+    "verified": true,
+    "notes": ""
+  }
+]

@@ -4,7 +4,8 @@ import os
 import pickle
 from pathlib import Path
 import shutil
-from typing import Iterable
+from typing import Any, Iterable
+from uuid import uuid4
 
 from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader
@@ -16,12 +17,18 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+try:
+    from .metrics import Timer, estimate_cost_usd, log_query, utc_timestamp
+except ImportError:  # Supports running modules directly from src/.
+    from metrics import Timer, estimate_cost_usd, log_query, utc_timestamp
+
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / "data"
 CHROMA_DIR = BASE_DIR / "chroma_db"
 TFIDF_INDEX_PATH = CHROMA_DIR / "tfidf_index.pkl"
+DEFAULT_SESSION_ID = str(uuid4())
 
 
 @dataclass
@@ -29,6 +36,29 @@ class IngestResult:
     pdf_count: int
     page_count: int
     chunk_count: int
+
+
+@dataclass
+class AnswerResult:
+    """Answer, retrieved documents, and metrics for one question.
+
+    It remains iterable as ``(answer, docs)`` so existing callers that unpack
+    the historical return value continue to work.
+    """
+
+    answer: str
+    documents: list[Document]
+    metrics: dict[str, Any]
+
+    def __iter__(self):
+        yield self.answer
+        yield self.documents
+
+    def __getitem__(self, index: int):
+        return (self.answer, self.documents)[index]
+
+    def __len__(self) -> int:
+        return 2
 
 
 PROMPT = ChatPromptTemplate.from_messages(
@@ -127,12 +157,25 @@ def reset_vectorstore() -> None:
     shutil.rmtree(resolved_chroma_dir)
 
 
-def get_retriever():
+def get_top_k() -> int:
+    return max(1, int(os.getenv("RETRIEVER_TOP_K", "4")))
+
+
+def get_chunk_size() -> int:
+    return max(1, int(os.getenv("CHUNK_SIZE", "1000")))
+
+
+def get_chunk_overlap() -> int:
+    return max(0, int(os.getenv("CHUNK_OVERLAP", "200")))
+
+
+def get_retriever(k: int | None = None):
+    top_k = k or get_top_k()
     return get_vectorstore().as_retriever(
         search_type="mmr",
         search_kwargs={
-            "k": 4,
-            "fetch_k": 10,
+            "k": top_k,
+            "fetch_k": max(10, top_k * 2),
             "lambda_mult": 0.5,
         },
     )
@@ -199,8 +242,8 @@ def ingest_pdfs(pdf_paths: Iterable[Path] | None = None, reset: bool = True) -> 
         return IngestResult(pdf_count=0, page_count=0, chunk_count=0)
 
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=get_chunk_size(),
+        chunk_overlap=get_chunk_overlap(),
     )
     chunks = splitter.split_documents(documents)
 
@@ -253,7 +296,7 @@ def build_tfidf_index(chunks) -> None:
         )
 
 
-def retrieve_tfidf_documents(question: str, k: int = 4) -> list[Document]:
+def retrieve_tfidf_documents(question: str, k: int | None = None) -> list[Document]:
     from sklearn.metrics.pairwise import cosine_similarity
 
     if not TFIDF_INDEX_PATH.exists():
@@ -267,8 +310,9 @@ def retrieve_tfidf_documents(question: str, k: int = 4) -> list[Document]:
     ranked_indices = scores.argsort()[::-1]
 
     docs = []
+    top_k = k or get_top_k()
     for doc_index in ranked_indices:
-        if len(docs) >= k:
+        if len(docs) >= top_k:
             break
 
         score = float(scores[doc_index])
@@ -287,9 +331,10 @@ def retrieve_tfidf_documents(question: str, k: int = 4) -> list[Document]:
     return docs
 
 
-def merge_documents(document_groups: Iterable[list[Document]], limit: int = 4) -> list[Document]:
+def merge_documents(document_groups: Iterable[list[Document]], limit: int | None = None) -> list[Document]:
     merged_docs = []
     seen = set()
+    max_documents = limit or get_top_k()
 
     for documents in document_groups:
         for document in documents:
@@ -305,31 +350,34 @@ def merge_documents(document_groups: Iterable[list[Document]], limit: int = 4) -
             seen.add(key)
             merged_docs.append(document)
 
-            if len(merged_docs) >= limit:
+            if len(merged_docs) >= max_documents:
                 return merged_docs
 
     return merged_docs
 
 
-def retrieve_documents(question: str) -> list[Document]:
+def retrieve_documents(question: str, k: int | None = None) -> list[Document]:
     if get_retriever_provider() == "chroma":
-        return get_retriever().invoke(question)
+        return get_retriever(k).invoke(question)
 
-    return retrieve_tfidf_documents(question)
+    return retrieve_tfidf_documents(question, k)
 
 
-def retrieve_with_rewrite(question: str, rewritten_question: str) -> list[Document]:
+def retrieve_with_rewrite(
+    question: str, rewritten_question: str, k: int | None = None
+) -> list[Document]:
+    top_k = k or get_top_k()
     if get_retriever_provider() == "chroma":
-        rewritten_docs = get_retriever().invoke(rewritten_question)
-        original_docs = get_retriever().invoke(question)
+        rewritten_docs = get_retriever(top_k).invoke(rewritten_question)
+        original_docs = get_retriever(top_k).invoke(question)
     else:
         combined_question = f"{question}\n{rewritten_question}"
-        rewritten_docs = retrieve_tfidf_documents(rewritten_question)
-        combined_docs = retrieve_tfidf_documents(combined_question)
-        original_docs = retrieve_tfidf_documents(question)
-        return merge_documents([rewritten_docs, combined_docs, original_docs])
+        rewritten_docs = retrieve_tfidf_documents(rewritten_question, top_k)
+        combined_docs = retrieve_tfidf_documents(combined_question, top_k)
+        original_docs = retrieve_tfidf_documents(question, top_k)
+        return merge_documents([rewritten_docs, combined_docs, original_docs], top_k)
 
-    return merge_documents([rewritten_docs, original_docs])
+    return merge_documents([rewritten_docs, original_docs], top_k)
 
 
 def get_llm() -> ChatGoogleGenerativeAI:
@@ -355,7 +403,34 @@ def message_content_to_text(content) -> str:
     return str(content)
 
 
-def rewrite_question(question: str) -> str:
+def usage_from_response(response: Any, fallback_input_text: str = "", fallback_output_text: str = "") -> dict[str, Any]:
+    """Extract Gemini token metadata, marking deterministic approximations clearly."""
+    usage = getattr(response, "usage_metadata", None) or {}
+    if not usage:
+        response_metadata = getattr(response, "response_metadata", None) or {}
+        if isinstance(response_metadata, dict):
+            usage = response_metadata.get("usage_metadata", response_metadata.get("usage", {}))
+    if not isinstance(usage, dict):
+        usage = dict(usage) if hasattr(usage, "items") else {}
+
+    input_tokens = usage.get("input_tokens", usage.get("prompt_token_count"))
+    output_tokens = usage.get("output_tokens", usage.get("candidates_token_count"))
+    estimated = input_tokens is None or output_tokens is None
+    if estimated:
+        # A transparent rough fallback: approximately four characters per token.
+        input_tokens = input_tokens if input_tokens is not None else max(1, len(fallback_input_text) // 4)
+        output_tokens = output_tokens if output_tokens is not None else max(1, len(fallback_output_text) // 4)
+
+    return {
+        "input_tokens": int(input_tokens),
+        "output_tokens": int(output_tokens),
+        "tokens_estimated": estimated,
+        "called": True,
+    }
+
+
+def rewrite_question_with_metrics(question: str) -> tuple[str, dict[str, Any], str | None]:
+    """Rewrite a question and return query, call token data, and any error."""
     pdf_sources = ", ".join(pdf_path.name for pdf_path in list_pdf_files()) or "None"
     try:
         final_prompt = QUERY_REWRITE_PROMPT.invoke(
@@ -364,29 +439,120 @@ def rewrite_question(question: str) -> str:
                 "pdf_sources": pdf_sources,
             }
         )
-        response = get_llm().invoke(final_prompt)
+        with Timer() as timer:
+            response = get_llm().invoke(final_prompt)
         rewritten_question = message_content_to_text(response.content).strip()
-    except Exception:
-        return question
+        usage = usage_from_response(response, str(final_prompt), rewritten_question)
+        usage["latency_ms"] = round(timer.elapsed_ms, 2)
+        return rewritten_question or question, usage, None
+    except Exception as exc:
+        return question, {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "tokens_estimated": False,
+            "called": False,
+            "latency_ms": 0.0,
+        }, f"Rewrite failed: {exc}"
 
-    return rewritten_question or question
+
+def rewrite_question(question: str) -> str:
+    """Return a standalone query while retaining the original public helper."""
+    rewritten_question, _, _ = rewrite_question_with_metrics(question)
+    return rewritten_question
 
 
-def answer_question(question: str) -> tuple[str, list]:
-    rewritten_question = rewrite_question(question)
-    docs = retrieve_with_rewrite(question, rewritten_question)
+def _chunk_metrics(documents: list[Document]) -> list[dict[str, Any]]:
+    metrics = []
+    for doc in documents:
+        page_index = doc.metadata.get("page")
+        metrics.append(
+            {
+                "source_file": doc.metadata.get("source", "Unknown source"),
+                "page": page_index + 1 if isinstance(page_index, int) else page_index,
+                "page_index": page_index,
+                "score": doc.metadata.get("score"),
+                "preview": doc.page_content[:200],
+            }
+        )
+    return metrics
 
-    if not docs:
-        return "I could not find the answer in the document.", []
 
-    context = "\n\n".join(doc.page_content for doc in docs)
-    final_prompt = PROMPT.invoke(
-        {
-            "context": context,
-            "question": question,
-        }
-    )
+def answer_question(
+    question: str,
+    session_id: str | None = None,
+    source: str = "app",
+    top_k: int | None = None,
+) -> AnswerResult:
+    """Answer a question and persist honest pipeline measurements as JSONL."""
+    session = session_id or DEFAULT_SESSION_ID
+    metrics: dict[str, Any] = {
+        "timestamp": utc_timestamp(),
+        "session_id": session,
+        "source": source,
+        "question": question,
+        "rewritten_query": question,
+        "retrieval_settings": {
+            "retriever_provider": get_retriever_provider(),
+            "top_k": top_k or get_top_k(),
+            "chunk_size": get_chunk_size(),
+            "chunk_overlap": get_chunk_overlap(),
+        },
+        "retrieved_chunks": [],
+        "answer": "",
+        "timings_ms": {"rewrite_ms": 0.0, "retrieval_ms": 0.0, "llm_ms": 0.0, "total_ms": 0.0},
+        "gemini_calls": {
+            "rewrite": {"input_tokens": 0, "output_tokens": 0, "tokens_estimated": False, "called": False},
+            "answer": {"input_tokens": 0, "output_tokens": 0, "tokens_estimated": False, "called": False},
+        },
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "tokens_estimated": True,
+        "estimated_cost_usd": 0.0,
+        "cache_hit": False,
+        "prompt_version": os.getenv("PROMPT_VERSION", "baseline"),
+        "config_tag": os.getenv("CONFIG_TAG", "baseline"),
+        "error": None,
+    }
+    docs: list[Document] = []
+    answer = "I could not find the answer in the document."
 
-    response = get_llm().invoke(final_prompt)
+    with Timer() as total_timer:
+        rewritten_question, rewrite_usage, rewrite_error = rewrite_question_with_metrics(question)
+        metrics["rewritten_query"] = rewritten_question
+        metrics["gemini_calls"]["rewrite"] = rewrite_usage
+        metrics["timings_ms"]["rewrite_ms"] = rewrite_usage["latency_ms"]
+        if rewrite_error:
+            metrics["error"] = rewrite_error
 
-    return message_content_to_text(response.content), docs
+        try:
+            with Timer() as retrieval_timer:
+                docs = retrieve_with_rewrite(question, rewritten_question, top_k)
+            metrics["timings_ms"]["retrieval_ms"] = round(retrieval_timer.elapsed_ms, 2)
+        except Exception as exc:
+            metrics["error"] = f"{metrics['error']}; Retrieval failed: {exc}" if metrics["error"] else f"Retrieval failed: {exc}"
+            docs = []
+        metrics["retrieved_chunks"] = _chunk_metrics(docs)
+
+        if docs:
+            context = "\n\n".join(doc.page_content for doc in docs)
+            final_prompt = PROMPT.invoke({"context": context, "question": question})
+            try:
+                with Timer() as llm_timer:
+                    response = get_llm().invoke(final_prompt)
+                answer = message_content_to_text(response.content)
+                answer_usage = usage_from_response(response, str(final_prompt), answer)
+                answer_usage["latency_ms"] = round(llm_timer.elapsed_ms, 2)
+                metrics["gemini_calls"]["answer"] = answer_usage
+                metrics["timings_ms"]["llm_ms"] = answer_usage["latency_ms"]
+            except Exception as exc:
+                answer = "I could not generate an answer from the document."
+                metrics["error"] = f"{metrics['error']}; Answer failed: {exc}" if metrics["error"] else f"Answer failed: {exc}"
+
+    metrics["timings_ms"]["total_ms"] = round(total_timer.elapsed_ms, 2)
+    metrics["answer"] = answer
+    metrics["input_tokens"] = sum(call["input_tokens"] for call in metrics["gemini_calls"].values())
+    metrics["output_tokens"] = sum(call["output_tokens"] for call in metrics["gemini_calls"].values())
+    metrics["tokens_estimated"] = any(call["tokens_estimated"] for call in metrics["gemini_calls"].values())
+    metrics["estimated_cost_usd"] = estimate_cost_usd(metrics["input_tokens"], metrics["output_tokens"])
+    log_query(metrics)
+    return AnswerResult(answer=answer, documents=docs, metrics=metrics)
